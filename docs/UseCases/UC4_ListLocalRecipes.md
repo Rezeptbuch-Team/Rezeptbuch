@@ -1,5 +1,6 @@
 # List Local Recipes
 ## Brief Decription
+including filtering, searching and sorting
 
 ## Mockup
 
