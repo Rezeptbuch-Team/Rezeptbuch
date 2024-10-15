@@ -75,11 +75,11 @@ As a cook,
 
 I want to filter the list of online recipes by categories like: main, dessert, vegan, gluten-free etc.
 
-So that I can discover new relevant recipes.
+So that I can discover new relevant recipes to add to my cookbook.
 
 ## Search online recipes
 As a cook,
 
 I want to search my list of online recipes by name,
 
-So that I can easily find new recipes, that I am looking for.
+So that I can easily find new recipes to add to my cookbook, that I am looking for.
