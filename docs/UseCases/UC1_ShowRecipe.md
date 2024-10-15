@@ -1,5 +1,6 @@
 # Show recipe
 ## Brief Decription
+including publishing it, if it is created by the user (publish button)
 
 ## Mockup
 
