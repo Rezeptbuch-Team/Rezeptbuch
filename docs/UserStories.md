@@ -42,6 +42,13 @@ I want to search my list of installed recipes by name,
 
 So that I can easily find the recipe I am looking for.
 
+## Sort local recipes
+As a cook,
+
+I want to sort the list of installed recipes by name, required time and amount of ingredients,
+
+So that I have an ordered list of recipes.
+
 ## Ingredient-based local recipe recommendations
 As a cook,
 
@@ -66,20 +73,28 @@ So that other users can find and use it.
 ## List online recipes
 As a cook,
 
-I want to see a list of online recipes, showing the name and image,
+I want to see a list of online recipes, showing the name and image, with a download button,
 
 So that I can discover new recipes to add to my cookbook.
 
 ## Filter online recipes
 As a cook,
 
-I want to filter the list of online recipes by categories like: main, dessert, vegan, gluten-free etc.
+I want to filter the list of online recipes by categories like: main, dessert, vegan, gluten-free etc., with a download button,
 
 So that I can discover new relevant recipes to add to my cookbook.
 
 ## Search online recipes
 As a cook,
 
-I want to search my list of online recipes by name,
+I want to search list of online recipes by name,
 
-So that I can easily find new recipes to add to my cookbook, that I am looking for.
+So that I can easily find new recipes to add to my cookbook, that I am looking for., with a download button,
+
+
+## Sort online recipes
+As a cook,
+
+I want to sort the list of online recipes by name, required time and amount of ingredients, with a download button,
+
+So that I have an ordered list of recipes.
