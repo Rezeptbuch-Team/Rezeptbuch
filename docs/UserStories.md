@@ -87,9 +87,9 @@ So that I can discover new relevant recipes to add to my cookbook.
 ## Search online recipes
 As a cook,
 
-I want to search list of online recipes by name,
+I want to search list of online recipes by name, with a download button,
 
-So that I can easily find new recipes to add to my cookbook, that I am looking for., with a download button,
+So that I can easily find new recipes to add to my cookbook, that I am looking for.
 
 
 ## Sort online recipes
