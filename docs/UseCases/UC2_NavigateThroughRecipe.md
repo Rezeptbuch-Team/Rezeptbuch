@@ -5,6 +5,7 @@ including the change of the amount of servings (before starting the walkthrough 
 ## Mockup
 
 ## Sequence Diagram
+![Navigate Through Recipe Sequenzdiagramm drawio](https://github.com/user-attachments/assets/683c6d26-bc66-48d2-922d-03a593b4aa66)
 
 ## Special Requirements
 
