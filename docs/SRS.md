@@ -51,7 +51,7 @@ Where application development tools, such as requirements tools, modeling tools,
 
 #### 3.1.1	Show recipe
 Display a comprehensive recipe overview, including a "Publish" button if the recipe was created by the current user. The overview should feature the recipe's name, a brief description, an image of the dish, a list of ingredients, and the total cooking time.  
-![Show recipe use case](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/UseCases/UC1_ShowRecipe.md)
+[Show recipe use case](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/UseCases/UC1_ShowRecipe.md)
 
 ### 3.2	Usability 
 [This section should include all of those requirements that affect usability. For example,
