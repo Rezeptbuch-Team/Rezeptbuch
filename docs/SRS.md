@@ -16,7 +16,6 @@ For the planned subsystems and use-case models see the [use-case-diagram](#22-us
 ### 1.3	Definitions, Acronyms and Abbreviations
 
 ### 1.4	References
-### 1.4 References
 
 | Title                                                              | Date       | Publishing organization   |
 | -------------------------------------------------------------------|:----------:| ------------------------- |
@@ -24,23 +23,29 @@ For the planned subsystems and use-case models see the [use-case-diagram](#22-us
 | [GitHub](https://github.com/GermanJesus-lul/Rezeptbuch) | 21.10.2024 | Rezeptbuch Team  |
 
 ### 1.5	Overview
-[This subsection should describe what the rest of the SRS contains and explain how the document is organized.]
+The upcoming chapter presents a project overview, featuring the vision and the Overall Use Case Diagram. Chapter three, titled Requirements Specification, delves deeper into the detailed requirements concerning functionality, usability, and design aspects. The final chapter includes supporting information.
 
 ## 2. Overall Description
-[This section of the SRS should describe the general factors that affect the product and its requirements.  This section does not state specific requirements.  Instead, it provides a background for those requirements, which are defined in detail in Section 3, and makes them easier to understand. Include such items as: 
-•	product perspective
-•	product functions
-•	 user characteristics
-•	constraints
-•	assumptions and dependencies
-•	requirements subsets]
-
-
 ### 2.1 Vision
+Rezeptbuch is a cookbook application designed for offline use, with features for sharing and discovering new recipes through add-ons that enhance your personal collection and the ability to adjust the number of servings for a recipe.
 
 ### 2.2 Use Case Diagram
+!(https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/UseCaseDiagram.png)
 
 ### 2.3 Technology Stack
+Below is an overview of the technology stack used for the development of this project:
+
+Backend: ASP.NET WebApi
+
+Frontend: .NET Maui
+
+Application logic: .NET
+
+Testing: NUnit
+
+IDE: Visual Studio Code
+
+Project management: Jira
 
 ## 3. Specific Requirements
 [This section of the SRS should contain all the software requirements to a level of detail sufficient to enable designers to design a system to satisfy those requirements, and testers to test that the system satisfies those requirements.   When using use-case modeling, these requirements are captured in the Use-Cases and the applicable supplementary specifications.  If use-case modeling is not used, the outline for supplementary specifications may be inserted directly into this section, as shown below.]
