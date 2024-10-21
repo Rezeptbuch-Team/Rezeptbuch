@@ -3,7 +3,7 @@
 including the change of the amount of servings (before starting the walkthrough of the recipe)
 
 ## Mockup
-
+![NavigateRecipe](https://github.com/user-attachments/assets/508fe8b1-67b2-4dd4-9183-84fdd3570596)
 ## Sequence Diagram
 ![Navigate Through Recipe Sequenzdiagramm drawio](https://github.com/user-attachments/assets/683c6d26-bc66-48d2-922d-03a593b4aa66)
 
