@@ -1,8 +1,6 @@
 # Show recipe
 ## Brief Decription
-including publishing it, if it is created by the user (publish button)
-
-including the list of ingredients, an image, the name of the recipe, the required time and a short description
+Display a comprehensive recipe overview, including a "Publish" button if the recipe was created by the current user. The overview should feature the recipe's name, a brief description, an image of the dish, a list of ingredients, and the total cooking time.
 
 ## Mockup
 
