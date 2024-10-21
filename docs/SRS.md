@@ -14,6 +14,10 @@ Rezeptbuch is a cookbook application designed for offline use, with features for
 For the planned subsystems and use-case models see the [use-case-diagram](#22-use-case-diagram).
 
 ### 1.3	Definitions, Acronyms and Abbreviations
+| Abbreviation                                | Explanation   |
+| -----------------------------------------|:---------- |
+| MVVM | Model-View-Viewmodel |
+| REST | Representational State Transfer  |
 
 ### 1.4	References
 
@@ -107,10 +111,7 @@ The development process should adhere to test-driven development to ensure compl
 We will write the code following widely recognized clean code standards to ensure maintainability, readability, and scalability. This will include the use of best practices such as dependency injection, which promotes loose coupling between components, making the code more modular and easier to test, maintain, and extend over time. By adhering to these principles, we aim to create a robust and efficient codebase that can easily adapt to future changes and improvements.
 
 ### 3.6	Design Constraints
-[This section should indicate any design constraints on the system being built. Design constraints represent design decisions that have been mandated and must be adhered to.  Examples include software languages, software process requirements, prescribed use of developmental tools, architectural and design constraints, purchased components, class libraries, etc.]
-
-#### 3.6.1	<Design Constraint One>
-[The requirement description goes here.]
+The software architecture will strictly adhere to the **MVVM (Model-View-ViewModel)** pattern, ensuring a clear separation between the user interface, application logic, and data management. **RESTful principles** will be followed for backend communication, promoting scalability, modularity, and ease of integration with external services. Additionally, the design will enforce **separation of concerns**, organizing the code into distinct layers with minimal overlap, enhancing maintainability, testability, and future extensibility of the system.
 
 ### 3.7	On-line User Documentation and Help System Requirements
 [Describes the requirements, if any, for on-line user documentation, help systems, help about notices, etc.]
