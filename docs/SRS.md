@@ -114,38 +114,36 @@ We will write the code following widely recognized clean code standards to ensur
 The software architecture will strictly adhere to the **MVVM (Model-View-ViewModel)** pattern, ensuring a clear separation between the user interface, application logic, and data management. **RESTful principles** will be followed for backend communication, promoting scalability, modularity, and ease of integration with external services. Additionally, the design will enforce **separation of concerns**, organizing the code into distinct layers with minimal overlap, enhancing maintainability, testability, and future extensibility of the system.
 
 ### 3.7	On-line User Documentation and Help System Requirements
-[Describes the requirements, if any, for on-line user documentation, help systems, help about notices, etc.]
+The app should be highly intuitive, minimizing the need for additional documentation. For users who require assistance, a "Help" button will be available, offering access to a FAQ section.
 
 ### 3.8	Purchased Components
-[This section describes any purchased components to be used with the system, any applicable licensing or usage restrictions, and any associated compatibility and interoperability or interface standards.]
+Currently, no purchased components have been integrated into the project. If any are acquired in the future, they will be documented and listed here.
 
 ### 3.9	Interfaces
-[This section defines the interfaces that must be supported by the application. It should contain adequate specificity, protocols, ports and logical addresses, etc. so that the software can be developed and verified against the interface requirements.]
-
 #### 3.9.1	User Interfaces
-[Describe the user interfaces that are to be implemented by the software.]
-
-#### 3.9.2	Hardware Interfaces
-[This section defines any hardware interfaces that are to be supported by the software, including logical structure, physical addresses, expected behavior, etc. ]
+The user interfaces are:
+- Recipe overview
+- List of installed recipes
+- List of online recipes
+- Recipe walkthrough
+- Recipe creation
 
 #### 3.9.3	Software Interfaces
-[This section describes software interfaces to other components of the software system. These may be purchased components, components reused from another application or components being developed for subsystems outside of the scope of this SRS but with which this software application must interact.]
+The primary software interface is designed for Windows, with potential support for additional platforms planned in the future.
 
 #### 3.9.4	Communications Interfaces
-[Describe any communications interfaces to other systems or devices such as local area networks, remote serial devices, etc.]
-
-### 3.10	Licensing Requirements
-[Defines any licensing enforcement requirements or other usage restriction requirements that are to be exhibited by the software.]
+The user application will interact with the API via the HTTP protocol for data exchange and communication.
 
 ### 3.11	Legal, Copyright, and Other Notices
-[This section describes any necessary legal disclaimers, warranties, copyright notices, patent notice, wordmark, trademark, or logo compliance issues for the software.]
+The logo is licensed to the Rezeptbuch Team and is only allowed to use for the application. We do not take responsibilty for any incorrect data or errors in the application.
 
 ### 3.12	Applicable Standards
-[This section describes by reference any applicable standard and the specific sections of any such standards which apply to the system being described. For example, this could include legal, quality and regulatory standards, industry standards for usability, interoperability, internationalization, operating system compliance, etc.]
+The development will follow **REST API standards**, ensuring consistent HTTP methods, status codes, and structured URLs, as well as **clean code standards** to promote readability, maintainability, and modularity.
 
 ## 4.	Supporting Information
-[The supporting information makes the SRS easier to use.  It includes:
-•	Table of contents
-•	 Index
-•	Appendices
-These may include use-case storyboards or user-interface prototypes. When appendices are included, the SRS should explicitly state whether or not the appendices are to be considered part of the requirements.]
+For any further information you can contact the Rezeptbuch team or check our Blog.  
+The Team Members are:
+- Julius Göler
+- Luca Grimm
+- Jaron Köhler
+- Tom Jenrich
