@@ -86,21 +86,25 @@ The application must maintain a minimum uptime of 99.5% to ensure users can acce
 Users should be able to view their saved recipes and basic app functionality, such as searching installed recipes, even when offline.
 
 ### 3.4	Performance
-[The system’s performance characteristics should be outlined in this section. Include specific response times. Where applicable, reference related Use Cases by name.
-•	response time for a transaction (average, maximum)
-•	throughput, for example, transactions per second
-•	capacity, for example, the number of customers or transactions the system can accommodate
-•	degradation modes (what is the acceptable mode of operation when the system has been degraded in some manner)
-•	resource utilization, such as memory, disk, communications, etc.
+#### 3.4.1	Storage
+The application will prioritize minimizing storage usage to efficiently accommodate a large number of installed recipes.
 
-#### 3.4.1	<Performance Requirement One>
-[The requirement description goes here.]
+#### 3.4.2  List Performance
+The application must provide fast and accurate search and filter results. A recipe search should return relevant results within 1 second, even when searching across a large database.
+
+#### 3.4.3 Capacity
+The application must support up to 500 concurrent users without experiencing a noticeable degradation in performance or system responsiveness.
+
+#### 3.4.4 Scalability
+The system must be scalable to handle increased numbers of users and recipes over time, allowing the application to grow seamlessly without major performance issues.
 
 ### 3.5	Supportability
-[This section indicates any requirements that will enhance the supportability or maintainability of the system being built, including coding standards, naming conventions, class libraries, maintenance access, maintenance utilities.]
 
-#### 3.5.1	<Supportability Requirement One>
-[The requirement description goes here.]
+#### 3.5.1	Test-Driven Development
+The development process should adhere to test-driven development to ensure complete test coverage from the start.
+
+#### 3.5.2 Coding Standards
+We will write the code following widely recognized clean code standards to ensure maintainability, readability, and scalability. This will include the use of best practices such as dependency injection, which promotes loose coupling between components, making the code more modular and easier to test, maintain, and extend over time. By adhering to these principles, we aim to create a robust and efficient codebase that can easily adapt to future changes and improvements.
 
 ### 3.6	Design Constraints
 [This section should indicate any design constraints on the system being built. Design constraints represent design decisions that have been mandated and must be adhered to.  Examples include software languages, software process requirements, prescribed use of developmental tools, architectural and design constraints, purchased components, class libraries, etc.]
