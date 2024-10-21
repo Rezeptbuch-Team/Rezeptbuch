@@ -7,7 +7,7 @@
   - [Definitions, Acronyms and Abbreviations](#13definition-acronyms-and-abbreviations)
   - [References](#14references)
   - [Overview](#15overview)
-- [Overall Description](#-2overall-description)
+- [Overall Description](#2-overall-description)
   - [Vision](#21vision)
   - [Use Case Diagram](#22-use-case-diagram)
   - [Technology Stack](#23-technology-stack)
