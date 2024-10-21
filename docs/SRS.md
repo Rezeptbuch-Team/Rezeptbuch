@@ -19,8 +19,10 @@
   - [Supportability](#35-supportability)
   - [Design Constraints](#36-design-constraints)
   - [Online User Documentation and Help System Requirements](#37-online-user-documentation-and-help-system-requirements)
-  - [Interfaces](#38-interfaces)
-  - [Licensing Requirements](#39-legal-copyright-and-other-notices)
+  - [Purchase components](#38purchased-components)
+  - [Interfaces](#39-interfaces)
+  - [Legal, Copyright, and Other Notices](#310-legal-copyright-and-other-notices)
+  - [Applicable Standards](#311-applicable-standards)
 - [Supporting Information](#4-supporting-information)
 
 ## 1. Introduction
