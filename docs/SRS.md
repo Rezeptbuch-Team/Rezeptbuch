@@ -2,10 +2,6 @@
 ## Table of Contents
 
 ## 1. Introduction
-[The introduction of the Software Requirements Specification (SRS) should provide an overview of the entire SRS. It should include the purpose, scope, definitions, acronyms, abbreviations, references, and overview of the SRS.]
-[Note: The Software Requirements Specification (SRS) captures the complete software requirements for the system, or a portion of the system.  Following is a typical SRS outline for a project using only traditional natural-language style requirements – with no use-case modeling.  It captures all requirements in a single document,  with  applicable sections inserted from the  Supplementary Specifications (which would no longer be needed).  For a template of an SRS using use-case modeling, which consists of a package containing Use-Cases of the use-case model and applicable Supplementary Specifications and other supporting information, see rup_SRS-uc.dot.]
-[Many different arrangements of an SRS are possible.  Refer to [IEEE830-1998] for further elaboration of these explanations, as well as other options for SRS organization.]
-
 ### 1.1 Purpose
 This document outlines the requirements for our application, including non-functional requirements, design constraints, and other key elements needed to present a full and detailed description of the specifications for Rezeptbuch.
 
@@ -15,15 +11,17 @@ Rezeptbuch is a cookbook application designed for offline use, with features for
 - Searching recipes by category
 - Filtering recipes by ingredients, with the option to input on-hand ingredients and receive matching recipe suggestions
 
-For the planned subsystems see the [use-case-diagram](#22-use-case-diagram).
-
-[A brief description of the software application that the SRS applies to; the feature or other subsystem grouping; what Use-Case model(s) it is associated with;  and anything else that is affected or influenced by this document.]
+For the planned subsystems and use-case models see the [use-case-diagram](#22-use-case-diagram).
 
 ### 1.3	Definitions, Acronyms and Abbreviations
-[This subsection should provide the definitions of all terms, acronyms, and abbreviations required to properly interpret the SRS.  This information may be provided by reference to the project Glossary.]
 
 ### 1.4	References
-[This subsection should provide a complete list of all documents referenced elsewhere in the SRS.  Each document should be identified by title, report number (if applicable), date, and publishing organization.  Specify the sources from which the references can be obtained. This information may be provided by reference to an appendix or to another document.]
+### 1.4 References
+
+| Title                                                              | Date       | Publishing organization   |
+| -------------------------------------------------------------------|:----------:| ------------------------- |
+| [Rezeptbuch Blog](https://github.com/GermanJesus-lul/Rezeptbuch/discussions/categories/announcements)| 21.10.2024 | Rezeptbuch Team  |
+| [GitHub](https://github.com/GermanJesus-lul/Rezeptbuch) | 21.10.2024 | Rezeptbuch Team  |
 
 ### 1.5	Overview
 [This subsection should describe what the rest of the SRS contains and explain how the document is organized.]
