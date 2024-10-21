@@ -15,15 +15,15 @@
   - [Functionality](#31functionality)
   - [Usability](#32usability)
   - [Reliability](#33reliability)
-  - [Performance](#34-performance)
-  - [Supportability](#35-supportability)
-  - [Design Constraints](#36-design-constraints)
+  - [Performance](#34performance)
+  - [Supportability](#35supportability)
+  - [Design Constraints](#36design-constraints)
   - [Online User Documentation and Help System Requirements](#37online-user-documentation-and-help-system-requirements)
   - [Purchase components](#38purchased-components)
-  - [Interfaces](#39-interfaces)
-  - [Legal, Copyright, and Other Notices](#310-legal-copyright-and-other-notices)
-  - [Applicable Standards](#311-applicable-standards)
-- [Supporting Information](#4-supporting-information)
+  - [Interfaces](#39interfaces)
+  - [Legal, Copyright, and Other Notices](#310legal-copyright-and-other-notices)
+  - [Applicable Standards](#311applicable-standards)
+- [Supporting Information](#4supporting-information)
 
 ## 1. Introduction
 ### 1.1 Purpose
