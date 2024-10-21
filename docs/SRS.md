@@ -33,18 +33,13 @@ Rezeptbuch is a cookbook application designed for offline use, with features for
 ![](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/UseCaseDiagram.png)
 
 ### 2.3 Technology Stack
-Below is an overview of the technology stack used for the development of this project:
 
-Backend: ASP.NET WebApi
-
-Frontend: .NET Maui
-
-Application logic: .NET
-
-Testing: NUnit
-
-IDE: Visual Studio Code
-
+Below is an overview of the technology stack used for the development of this project:  
+Backend: ASP.NET WebApi  
+Frontend: .NET Maui  
+Application logic: .NET  
+Testing: NUnit  
+IDE: Visual Studio Code  
 Project management: Jira
 
 ## 3. Specific Requirements
