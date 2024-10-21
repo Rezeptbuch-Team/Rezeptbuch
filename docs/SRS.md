@@ -30,7 +30,7 @@ The upcoming chapter presents a project overview, featuring the vision and the O
 Rezeptbuch is a cookbook application designed for offline use, with features for sharing and discovering new recipes through add-ons that enhance your personal collection and the ability to adjust the number of servings for a recipe.
 
 ### 2.2 Use Case Diagram
-!(https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/UseCaseDiagram.png)
+![](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/UseCaseDiagram.png)
 
 ### 2.3 Technology Stack
 Below is an overview of the technology stack used for the development of this project:
