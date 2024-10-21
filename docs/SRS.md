@@ -7,9 +7,16 @@
 [Many different arrangements of an SRS are possible.  Refer to [IEEE830-1998] for further elaboration of these explanations, as well as other options for SRS organization.]
 
 ### 1.1 Purpose
-[Specify the purpose of this SRS. The SRS should fully describe the external behavior of the application or subsystem identified. It also describes nonfunctional requirements, design constraints and other factors necessary to provide a complete and comprehensive description of the requirements for the software.]
+This document outlines the requirements for our application, including non-functional requirements, design constraints, and other key elements needed to present a full and detailed description of the specifications for Rezeptbuch.
 
 ### 1.2	Scope
+Rezeptbuch is a cookbook application designed for offline use, with features for sharing and discovering new recipes through add-ons that enhance your personal collection. Key functionalities include:
+- Adjusting the number of servings
+- Searching recipes by category
+- Filtering recipes by ingredients, with the option to input on-hand ingredients and receive matching recipe suggestions
+
+For the planned subsystems see the [use-case-diagram](#22-use-case-diagram).
+
 [A brief description of the software application that the SRS applies to; the feature or other subsystem grouping; what Use-Case model(s) it is associated with;  and anything else that is affected or influenced by this document.]
 
 ### 1.3	Definitions, Acronyms and Abbreviations
