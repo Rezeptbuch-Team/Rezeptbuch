@@ -43,12 +43,7 @@ IDE: Visual Studio Code
 Project management: Jira
 
 ## 3. Specific Requirements
-[This section of the SRS should contain all the software requirements to a level of detail sufficient to enable designers to design a system to satisfy those requirements, and testers to test that the system satisfies those requirements.   When using use-case modeling, these requirements are captured in the Use-Cases and the applicable supplementary specifications.  If use-case modeling is not used, the outline for supplementary specifications may be inserted directly into this section, as shown below.]
-
 ### 3.1	Functionality
-[This section describes the functional requirements of the system for those requirements which are expressed in the natural language style. For many applications, this may constitute the bulk of the SRS Package and thought should be given to the organization of this section. This section is typically organized by feature, but alternative organization methods may also be appropriate, for example, organization by user or organization by subsystem.  Functional requirements may include feature sets, capabilities, and security.
-Where application development tools, such as requirements tools, modeling tools, etc., are employed to capture the functionality, this section document will refer to the availability of that data, indicating the location and name of the tool that is used to capture the data.]
-
 #### 3.1.1	Recipe overview
 Display a comprehensive recipe overview, including a "Publish" button if the recipe was created by the current user.
 The overview should feature the recipe's name, a brief description, an image of the dish, a list of ingredients, and the total cooking time.  
@@ -72,25 +67,23 @@ Allow users to create new recipes, to extend their collection.
 [Show recipe use case](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/UseCases/UC5_CreateRecipe.md)
 
 ### 3.2	Usability 
-[This section should include all of those requirements that affect usability. For example,
-•	specify the required training time for a normal users and a power user to become productive at particular operations
-•	specify measurable task times for typical tasks or base the new system’s usability requirements on other systems that the users know and like
-•	specify requirement to conform to common usability standards, such as IBM’s CUA standards Microsoft’s GUI standards]
+The application should be intuitive and easy to use, reducing the need for extensive learning. Additionally, comprehensive documentation will be provided to guide users in navigating and maximizing the app's features.
 
-#### 3.2.1	<Usability Requirement One>
-[The requirement description goes here.]
+#### 3.2.1 Simple Design
+The application must maintain a clean, intuitive, and easy-to-navigate interface, ensuring that even users with minimal technical experience can create, search, and view recipes without confusion.
+
+#### 3.2.2  Consistent Design
+Design elements, such as buttons, menus, and icons, should remain consistent throughout the application to minimize the learning curve for users. All design components must follow a unified style guide to enhance usability and avoid confusion.
 
 ### 3.3	Reliability 
-[Requirements for reliability of the system should be specified here. Some suggestions follow:
-•	Availability—specify the percentage of time available ( xx.xx%), hours of use, maintenance access, degraded mode operations, etc.
-•	Mean Time Between Failures (MTBF) — this is usually specified in hours, but it could also be specified in terms of days, months or years.
-•	Mean Time To Repair (MTTR)—how long is the system allowed to be out of operation after it has failed?
-•	Accuracy—specify precision (resolution) and accuracy (by some known standard) that is required in the system’s output.
-•	Maximum Bugs or Defect Rate—usually expressed in terms of bugs per thousand of lines of code (bugs/KLOC) or bugs per function-point( bugs/function-point).
-•	Bugs or Defect Rate—categorized in terms of minor, significant, and critical bugs: the requirement(s) must define what is meant by a “critical” bug; for example, complete loss of data or a complete inability to use certain parts of the system’s functionality.]
+#### 3.3.1	Offline Access
+The application must ensure data integrity by preventing loss or corruption, safeguarding users' recipes.
 
-#### 3.3.1	<Reliability Requirement One>
-[The requirement description.]
+#### 3.3.2  Uptime
+The application must maintain a minimum uptime of 99.5% to ensure users can access recipes and features without interruptions.
+
+#### 3.3.3 Offline access
+Users should be able to view their saved recipes and basic app functionality, such as searching installed recipes, even when offline.
 
 ### 3.4	Performance
 [The system’s performance characteristics should be outlined in this section. Include specific response times. Where applicable, reference related Use Cases by name.
