@@ -9,7 +9,7 @@
   - [Overview](#15overview)
 - [Overall Description](#2overall-description)
   - [Vision](#21vision)
-  - [Use Case Diagram](#22use-case-diagram)
+  - [Use Case Diagram](#22-use-case-diagram)
   - [Technology Stack](#23technology-stack)
 - [Specific Requirements](#3specific-requirements)
   - [Functionality](#31functionality)
