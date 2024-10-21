@@ -1,17 +1,17 @@
 # Rezeptbuch - Software Requirement Specification
 ## Table of Contents
 - [Table of contents](#table-of-contents)
-- [Introduction](#1introduction)
-  - [Purpose](#11purpose)
+- [Introduction](#1-introduction)
+  - [Purpose](#11-purpose)
   - [Scope](#12scope)
   - [Definitions, Acronyms and Abbreviations](#13definition-acronyms-and-abbreviations)
   - [References](#14references)
   - [Overview](#15overview)
-- [Overall Description](#2overall-description)
+- [Overall Description](#-2overall-description)
   - [Vision](#21vision)
   - [Use Case Diagram](#22-use-case-diagram)
-  - [Technology Stack](#23technology-stack)
-- [Specific Requirements](#3specific-requirements)
+  - [Technology Stack](#23-technology-stack)
+- [Specific Requirements](#3-specific-requirements)
   - [Functionality](#31functionality)
   - [Usability](#32usability)
   - [Reliability](#33reliability)
@@ -158,10 +158,10 @@ The primary software interface is designed for Windows, with potential support f
 #### 3.9.4	Communications Interfaces
 The user application will interact with the API via the HTTP protocol for data exchange and communication.
 
-### 3.11	Legal, Copyright, and Other Notices
+### 3.10	Legal, Copyright, and Other Notices
 The logo is licensed to the Rezeptbuch Team and is only allowed to use for the application. We do not take responsibilty for any incorrect data or errors in the application.
 
-### 3.12	Applicable Standards
+### 3.11	Applicable Standards
 The development will follow **REST API standards**, ensuring consistent HTTP methods, status codes, and structured URLs, as well as **clean code standards** to promote readability, maintainability, and modularity.
 
 ## 4.	Supporting Information
