@@ -4,10 +4,12 @@ Display a comprehensive recipe overview, including a "Publish" button if the rec
 
 ## Mockup
 ![ShowRecipe](https://github.com/user-attachments/assets/acc9a556-2282-4000-a208-e9a99757df36)
+
 ## Sequence Diagram
 ![Show Recipe Sequenzdiagramm drawio](https://github.com/user-attachments/assets/b07dda83-ccc1-4c38-ac01-8075e4799fea)
 
 ## Special Requirements
+n/a
 
 ## Pre-Conditions
 * Recipes are stored locally: All recipes must already be saved on the local storage of the .NET MAUI application.
