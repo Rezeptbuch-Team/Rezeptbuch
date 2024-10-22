@@ -22,3 +22,6 @@ including the change of the amount of servings (before starting the walkthrough 
 * Ingredient quantities adjusted: Ingredient quantities have been adjusted according to the selected number of servings and are displayed to the user.
 * Recipe navigation completed: The user has navigated through all the recipe steps until the final step is reached.
 * Completion summary shown: A completion summary or message is shown to the user once the recipe walkthrough is finished.
+
+## Story Point Estimate
+7
