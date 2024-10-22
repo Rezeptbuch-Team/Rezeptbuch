@@ -11,3 +11,6 @@ including filtering, searching, sorting and ingredient-based recommendations
 ## Pre-Conditions
 
 ## Post-Conditions
+
+## Story Point Estimate
+8
