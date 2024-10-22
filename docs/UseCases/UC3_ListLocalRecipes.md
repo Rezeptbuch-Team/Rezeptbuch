@@ -15,9 +15,9 @@ n/a
 - Application is running.
 
 ## Post-Conditions
-- The list of local recipes is displayed to the user, based on any applied filters, searches, or sorting preferences.
-2. Ingredient-based recommendations are provided, if applicable.
-3. The user can select any recipe from the list to view.
+-  The list of local recipes is displayed to the user, based on any applied filters, searches, or sorting preferences.
+-  Ingredient-based recommendations are provided, if applicable.
+-  The user can select any recipe from the list to view.
   
 ## Story Point Estimate
 8
