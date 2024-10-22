@@ -19,3 +19,6 @@ Display a comprehensive recipe overview, including a "Publish" button if the rec
 * Recipe is displayed: The full recipe details, including the name, image, list of ingredients, required time, and description, are shown to the user.
 * No publish button displayed (if downloaded): If the recipe was not created by the user (it was downloaded from the database), the publish button is not displayed.
 * Optional actions enabled: The user can proceed with further actions such as adjusting servings or starting the step-by-step walkthrough for preparing the recipe.
+
+## Story Point Estimate
+5
