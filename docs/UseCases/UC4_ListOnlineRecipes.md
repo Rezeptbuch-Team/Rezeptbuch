@@ -11,3 +11,6 @@ including filtering, searching and sorting
 ## Pre-Conditions
 
 ## Post-Conditions
+
+## Story Point Estimate
+8
