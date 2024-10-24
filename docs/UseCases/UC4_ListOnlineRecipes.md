@@ -6,6 +6,7 @@ Allow the user to view a list of recipes stored online. The user can browse thro
 ![ListOnline](https://github.com/user-attachments/assets/0a43e52a-8703-45ae-aab1-95f8ec00ba8c)
 
 ## Sequence Diagram
+![List Online Recipes Sequenzdiagramm drawio](https://github.com/user-attachments/assets/890fc60d-9aa4-4d1b-9281-b4e5b810447d)
 
 ## Special Requirements
 n/a
