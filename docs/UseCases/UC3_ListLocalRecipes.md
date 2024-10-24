@@ -6,6 +6,7 @@ Allow the user to view a list of recipes stored locally in their personal cookbo
 ![ListLocal](https://github.com/user-attachments/assets/562baaa7-de4f-4c30-a8dc-602dcdc4ae7d)
 
 ## Sequence Diagram
+![List Local Recipes Sequenzdiagramm drawio](https://github.com/user-attachments/assets/7ae70ba3-2720-486b-a793-4ab01025a935)
 
 ## Special Requirements
 n/a
