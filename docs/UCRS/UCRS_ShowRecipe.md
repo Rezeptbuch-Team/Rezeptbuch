@@ -30,17 +30,17 @@ In the following the flow of events for this use case is explained, supported by
 ## 2. Flow of Events—Design 
 ![](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/ShowRecipeSequenceDiagram.png)
 
-1. View Recipe
+1. View Recipe:
    The user wants to get the overview of the recipe
-2. Check Recipe Source
+2. Check Recipe Source:
     It is checked if the recipe was published or if it is a local/private recipe
-3. Show Publish Button
+3. Show Publish Button:
    If it is a local/private recipe a publish button is shown
-4. Click Publish
+4. Click Publish:
    The user wants to publish the recipe
-5. Send Recipe data
+5. Send Recipe data:
    The recipe data is sent to the server
-6. Validate and Save Recipe
+6. Validate and Save Recipe:
    The recipe data is being validated and then saved to the list of online recipes
-7. Show Publish Success Message
+7. Show Publish Success Message:
    A dialog is displayed to the user if the publish action was successful or not
