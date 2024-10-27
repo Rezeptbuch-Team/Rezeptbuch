@@ -3,10 +3,10 @@
 Allow the user to navigate step-by-step through the cooking instructions of a selected recipe. Before starting the recipe walkthrough, the user has the option to adjust the number of servings. Based on the serving size selected, the application automatically updates the ingredient quantities. The user can then proceed through the recipe steps in a guided manner, following the instructions one step at a time.
 
 ## Mockup
-![NavigateRecipe](https://github.com/user-attachments/assets/508fe8b1-67b2-4dd4-9183-84fdd3570596)
+![NavigateRecipe](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/mockups/NavigateThroughRecipeMockup.png)
 
 ## Sequence Diagram
-![Navigate Through Recipe Sequenzdiagramm drawio](https://github.com/user-attachments/assets/683c6d26-bc66-48d2-922d-03a593b4aa66)
+![Navigate Through Recipe sequence diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/NavigateThroughRecipeSequenceDiagram.png)
 
 ## Special Requirements
 n/a
