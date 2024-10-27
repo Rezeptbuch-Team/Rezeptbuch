@@ -3,10 +3,10 @@
 Allow the user to view a list of recipes stored online. The user can browse through these recipes and has the option to apply filters (by cuisine type, cooking time etc.), search for specific recipes by name or keyword, and sort the list.
 
 ## Mockup
-![ListOnline](https://github.com/user-attachments/assets/0a43e52a-8703-45ae-aab1-95f8ec00ba8c)
+![ListOnline](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/mockups/ListOnlineRecipesMockup.png)
 
 ## Sequence Diagram
-![List Online Recipes Sequenzdiagramm drawio](https://github.com/user-attachments/assets/890fc60d-9aa4-4d1b-9281-b4e5b810447d)
+![List Online Recipes Sequenzdiagramm drawio](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/ListOnlineRecipesSequenceDiagram.png)
 
 ## Special Requirements
 n/a
