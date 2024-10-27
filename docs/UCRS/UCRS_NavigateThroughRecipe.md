@@ -46,7 +46,7 @@ In the following the flow of events for this use case is explained, supported by
 
 Steps 4 to 6 are repeated until no steps are left.
 
-7. Complete Walkthrough
+7. Complete Walkthrough:
     The user ends the walkthrough on the last step
-8. Show Completion Message
+8. Show Completion Message:
     A completion message is displayed to the user
