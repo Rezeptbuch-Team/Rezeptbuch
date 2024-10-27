@@ -3,10 +3,10 @@
 Allow the user to view a list of recipes stored locally in their personal cookbook. The user can browse through their saved recipes and has the option to apply filters (by cuisine type, cooking time etc.), search for specific recipes by name or keyword, and sort the list. Additionally, the system provides ingredient-based recommendations, suggesting recipes based on the ingredients the user has available.
 
 ## Mockup
-![ListLocal](https://github.com/user-attachments/assets/562baaa7-de4f-4c30-a8dc-602dcdc4ae7d)
+![ListLocal](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/mockups/ListLocalRecipesMockup.png)
 
 ## Sequence Diagram
-![List Local Recipes Sequenzdiagramm drawio](https://github.com/user-attachments/assets/7ae70ba3-2720-486b-a793-4ab01025a935)
+![List Local Recipes Sequenzdiagramm drawio](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/ListLocalRecipesSequenceDiagram.png)
 
 ## Special Requirements
 n/a
