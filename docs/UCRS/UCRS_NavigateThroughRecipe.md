@@ -11,26 +11,24 @@
 
 ## 1. Introduction
 ### 1.1 Purpose
+The purpose of this use case is to let a user navigate and follow a recipe step by step.
 
 ### 1.2 Scope
-[A brief description of the scope of this Use-Case Realization Specification; what Use Case model(s) it is associated with, and anything else that is affected or influenced by this document.]
+This use case is related to the "Show recipe" use case, as that is the use case before the "Navigate through recipe" use case.
 
 ### 1.3 Definitions, Acronyms, and Abbreviations
-
-[This subsection provides the definitions of all terms, acronyms, and abbreviations required to properly interpret the Use-Case Realization Specification.  This information may be provided by reference to the project’s Glossary.]
+n/a
 
 
 ### 1.4 References
-| Title                                                         | Date       | Publisher |
-|---------------------------------------------------------------|------------|-----------|
-| [AMOGUS Blog](https://github.com/CUMGroup/AMOGUS/discussions) | 19.10.2022 | CUMGroup  |
-| [Github](https://github.com/CUMGroup/AMOGUS/)                 | 19.10.2022 | CUMGroup  |
+| Title                                                         | Date |
+|---------------------------------------------------------------|------------|
+| [Blog](https://github.com/GermanJesus-lul/Rezeptbuch/discussions) | 19.10.2022  |
+| [Github](https://github.com/GermanJesus-lul/Rezeptbuch/)          | 19.10.2022  |
 
 ### 1.5 Overview
-[This subsection describes what the rest of the Use-Case Realization Specification contains and explains how the document is organized.]
-
+In the following the flow of events for this use case is explained, supported by a sequence diagram.
 ## 2. Flow of Events—Design 
-[A textual description of how the use case is realized in terms of collaborating objects. Its main purpose is to summarize the diagrams connected to the use case and to explain how they are related.]
+sequence diagram
 
-## 3. Derived Requirements
-[A textual description that collects all requirements, such as non-functional requirements, on the use-case realizations not considered in the design model, but that need to be taken care of during implementation.]
+description of diagram
