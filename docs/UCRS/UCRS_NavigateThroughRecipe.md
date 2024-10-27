@@ -28,7 +28,8 @@ n/a
 
 ### 1.5 Overview
 In the following the flow of events for this use case is explained, supported by a sequence diagram.
+
 ## 2. Flow of Events—Design 
-sequence diagram
+![](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/NavigateThroughRecipeSequenceDiagram.png)
 
 description of diagram
