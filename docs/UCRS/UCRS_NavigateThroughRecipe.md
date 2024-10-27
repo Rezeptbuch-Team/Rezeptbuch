@@ -31,4 +31,22 @@ In the following the flow of events for this use case is explained, supported by
 ## 2. Flow of Events—Design 
 ![](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/NavigateThroughRecipeSequenceDiagram.png)
 
-description of diagram
+1. Select Recipe:
+    The user selects the recipe
+2. Load Recipe Data:
+    The local recipe gets loaded into the application
+3. Start Walkthrough:
+    The user starts the walkthrough
+4. Display Step 1:
+    The first instruction step is displayed to the user
+5. Next Step:
+    The user wants to see the next step
+6. Display Next Step:
+    The next step is displayed to the user
+
+Steps 4 to 6 are repeated until no steps are left.
+
+7. Complete Walkthrough
+    The user ends the walkthrough on the last step
+8. Show Completion Message
+    A completion message is displayed to the user
