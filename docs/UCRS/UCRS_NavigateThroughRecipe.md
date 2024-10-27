@@ -21,10 +21,9 @@ n/a
 
 
 ### 1.4 References
-| Title                                                         | Date |
-|---------------------------------------------------------------|------------|
-| [Blog](https://github.com/GermanJesus-lul/Rezeptbuch/discussions) | 19.10.2022  |
-| [Github](https://github.com/GermanJesus-lul/Rezeptbuch/)          | 19.10.2022  |
+[Blog](https://github.com/GermanJesus-lul/Rezeptbuch/discussions)
+
+[Github](https://github.com/GermanJesus-lul/Rezeptbuch/)
 
 ### 1.5 Overview
 In the following the flow of events for this use case is explained, supported by a sequence diagram.
