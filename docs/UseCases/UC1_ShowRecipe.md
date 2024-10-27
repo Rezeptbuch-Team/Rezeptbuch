@@ -3,10 +3,10 @@
 Display a comprehensive recipe overview, including a "Publish" button if the recipe was created by the current user. The overview should feature the recipe's name, a brief description, an image of the dish, a list of ingredients, and the total cooking time.
 
 ## Mockup
-![ShowRecipe](https://github.com/user-attachments/assets/acc9a556-2282-4000-a208-e9a99757df36)
+![ShowRecipe](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/mockups/ShowRecipeMockup.png)
 
 ## Sequence Diagram
-![Show Recipe Sequenzdiagramm drawio](https://github.com/user-attachments/assets/b07dda83-ccc1-4c38-ac01-8075e4799fea)
+![Show Recipe Sequence diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/ShowRecipeSequenceDiagram.png)
 
 ## Special Requirements
 n/a
