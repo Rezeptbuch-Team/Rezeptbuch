@@ -8,6 +8,9 @@ Allow the user to view a list of recipes stored online. The user can browse thro
 ## Sequence Diagram
 ![List Online Recipes Sequenzdiagramm drawio](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/ListOnlineRecipesSequenceDiagram.png)
 
+## Activity Diagram
+![List Online Recipes Activity Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/activity_diagrams/ListOnlineRecipesActivityDiagram.png)
+
 ## Special Requirements
 n/a
 
