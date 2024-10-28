@@ -8,6 +8,9 @@ Display a comprehensive recipe overview, including a "Publish" button if the rec
 ## Sequence Diagram
 ![Show Recipe Sequence diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/ShowRecipeSequenceDiagram.png)
 
+## Activity Diagram
+![Show Recipe Activity Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/activity_diagrams/ShowRecipeActivityDiagram.png)
+
 ## Special Requirements
 n/a
 
