@@ -8,6 +8,9 @@ Allow the user to navigate step-by-step through the cooking instructions of a se
 ## Sequence Diagram
 ![Navigate Through Recipe sequence diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/NavigateThroughRecipeSequenceDiagram.png)
 
+## Activity Diagram
+![Navigate Through Recipe Activity Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/activity_diagrams/NavigateThroughRecipeActivityDiagram.png)
+
 ## Special Requirements
 n/a
 
