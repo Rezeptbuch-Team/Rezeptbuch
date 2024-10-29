@@ -2,8 +2,21 @@
 ## Recipe
 XML-File with own schema
 
+Save the recipe in the form of $hash$.xml  
+On startup check if there are any recipes whose filename/hash are not in the database.
+If so ask the user if they should be included in the cookbook.
+If so rename the file to $hash$.xml and insert the needed data into the database.  
+On startup also check if there are any conflicts:
+- hash of filename does not fit content -> indicates editing outside of software
+    edit entry that has the hash in the xml: set previous_hash to current hash, set is_modified to true, set id/hash to newly calculated hash
+- recipe listed in database does not exist in file system -> indicates deletion or renaming
+
+Also ask the user on startup (and on edit in the recipe editor) if he wants to upload the recipe updates (all entries where is_modified==true).
+If so publish updates and set the is_modified attribute to false and the last_published_hash attribute to the current hash.
+On the server delete the entry with the last_published_hash and insert the new recipe.
+
 information:
-- hash of the contents
+- hash of contents
 - title
 - image
 - description
@@ -15,12 +28,15 @@ information:
 
 ## Local DB
 - id/key = hash of recipe
+- is_downloaded: if the recipe was downloaded or if it is created by the user
+- is_published: if it has been published
+- is_modified: if it has been edited and not published again
+- last_published_hash: hash of the last version of the recipe that has been published
 - title
 - ingredient list
 - servings
 - categories
 - cooking time
-- file-link: could also save recipes with their hash as a file name, thus no file-link would be necessary
 
 Hash of recipe:  
 The hash is determined by the combination of title, servings, ingredient list, categories, cooking time and instructions using SHA256. 
@@ -28,7 +44,3 @@ So basically putting all text into the SHA256 algorithm.
 
 Goal:  
 save as little as possible in the db to decrease redundancy/storage, but still insure functionality and performance/speed
-
-
-## Open Questions
-How does this work together with editing recipes
