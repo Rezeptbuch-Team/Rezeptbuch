@@ -1,7 +1,6 @@
 # Data Storage Concept
 ## Recipe
-XML-File
-own schema
+XML-File with own schema
 
 information:
 - title
