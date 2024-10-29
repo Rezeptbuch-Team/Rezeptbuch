@@ -42,9 +42,9 @@ save as little as possible in the db to decrease redundancy/storage, but still i
     edit entry that has the hash in the xml: set previous_hash to current hash, set is_modified to true, set id/hash to newly calculated hash
 - recipe listed in database does not exist in file system -> indicates deletion or renaming  
     Search for file that has that hash saved in its information:  
-              handle it as if it was modified outside of the software and rename the file to the new hash  
+        ->handle it as if it was modified outside of the software and rename the file to the new hash  
     If there was no match found:  
-              delete it from the database (will be processed in step 2)
+        ->delete it from the database (will be processed in step 2)
   
 2. Check if there are any recipes whose filename/hash are not in the database.
 If so ask the user if they should be included in the cookbook.
