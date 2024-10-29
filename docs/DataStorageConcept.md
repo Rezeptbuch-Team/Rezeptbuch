@@ -1,8 +1,14 @@
 # Data Storage Concept
 ## Recipe
-XML-File with own schema
+XML-File with custom schema
 
-Save the recipe in the form of $hash$.xml  
+### Hash of Recipe
+The hash is determined by the combination of title, servings, ingredient list, categories, cooking time and instructions using SHA256. 
+So basically putting all text into the SHA256 algorithm.
+
+Save the recipe file in the form of $hash$.xml  
+
+### XML Format
 
 information:
 - hash of contents
@@ -26,10 +32,6 @@ information:
 - servings
 - categories
 - cooking time
-
-Hash of recipe:  
-The hash is determined by the combination of title, servings, ingredient list, categories, cooking time and instructions using SHA256. 
-So basically putting all text into the SHA256 algorithm.
 
 Goal:  
 save as little as possible in the db to decrease redundancy/storage, but still insure functionality and performance/speed
