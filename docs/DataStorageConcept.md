@@ -3,6 +3,7 @@
 XML-File with own schema
 
 information:
+- hash of the contents
 - title
 - image
 - description
