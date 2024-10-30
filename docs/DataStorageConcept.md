@@ -29,14 +29,27 @@ information:
 - is_modified: if it has been edited and not published again
 - last_published_hash: hash of the last version of the recipe that has been published
 - title
+- description
+- image path
 - ingredient list
-- servings
 - categories
 - cooking time
 - filepath
 
 Goal:  
 save as little as possible in the db to decrease redundancy/storage, but still insure functionality and performance/speed
+
+## Remote DB
+recommendation (may be changed by the server team)
+
+- id/key = hash of recipe
+- title
+- description
+- image path
+- categories
+- cooking time
+- filepath
+
 
 ## Application Startup actions
 1. Check if there are any conflicts:
