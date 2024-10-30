@@ -24,7 +24,7 @@ https://url.com/list?offset=0&count=15&order_by=cooking_time&order=DESC&categori
 
 #### Response
 Status Code: 200  
-Content-Type: application/json
+Content-Type: application/json  
 Content: Json list of recipes (the information of each recipe (e.g. title, description) is saved in key-value-pairs)  
 
 ### /upload
@@ -34,18 +34,18 @@ Content-Type: application/xml
 Content: XML-file  
 
 #### Response
-Status Code: 201
+Status Code: 201  
 Content: "success"
 
 ### /update
 #### Request  
 Method: POST  
 Content-Type: application/json  
-Content: {  
+Content: {   
 previous_hash,  
 XML-file  
 }
 
 #### Response
-Status Code: 200
+Status Code: 200  
 Content: "success"
