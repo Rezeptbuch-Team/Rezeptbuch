@@ -19,7 +19,7 @@ information:
 - servings
 - categories
 - cooking time
-- instruction: seperated into steps, inline element for ingredient including amount
+- instructions: seperated into steps, inline element for ingredient including amount
 
 ## Local DB
 - id/key = hash of recipe
