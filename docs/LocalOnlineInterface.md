@@ -9,13 +9,13 @@ Required URL-parameters:
 - count
 
 Optional URL-parameters:
-- order_by
-    possible values: "title", "cooking_time"
+- order_by  
+    possible values: "title", "cooking_time"  
     default: "title" 
-- order
-      possible values: "ASC", "DESC"  
+- order  
+      possible values: "ASC", "DESC"   
       default: "ASC"
-- categories
+- categories  
      comma-seperated list of strings
 
 Example:
