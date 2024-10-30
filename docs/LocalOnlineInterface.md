@@ -6,7 +6,7 @@ Method: GET
 
 Required URL-parameters:  
 - offset
-- count
+- count  
 Optional URL-parameters:
 - order_by
     possible values: "title", "cooking_time"
