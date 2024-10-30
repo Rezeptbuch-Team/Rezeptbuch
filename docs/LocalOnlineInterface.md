@@ -43,7 +43,7 @@ Method: POST
 Headers: {  
 Content-Type: application/json,   
 Previous-Hash: "previous_hash"  
-}
+}  
 Body: XML-file
 
 #### Response
