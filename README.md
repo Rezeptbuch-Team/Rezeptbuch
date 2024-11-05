@@ -1,10 +1,10 @@
 # Rezeptbuch
 
 ## Application
-[](https://github.com/GermanJesus-lul/RezeptbuchApplication)
+[Repository](https://github.com/GermanJesus-lul/RezeptbuchApplication)
 
 ## API
-[](https://github.com/GermanJesus-lul/RezeptbuchAPI)
+[Repository](https://github.com/GermanJesus-lul/RezeptbuchAPI)
 
 ## docs
 The docs folder is there for all kinds of documentation artifacts.
