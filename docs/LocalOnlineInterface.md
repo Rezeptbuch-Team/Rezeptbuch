@@ -41,7 +41,7 @@ Body: "success"
 #### Request  
 Method: POST  
 Headers: {  
-Content-Type: application/json,   
+Content-Type: application/xml,   
 Previous-Hash: "previous_hash"  
 }  
 Body: XML-file
