@@ -13,8 +13,8 @@ Optional URL-parameters:
     possible values: "title", "cooking_time"  
     default: "title" 
 - order  
-      possible values: "ASC", "DESC"   
-      default: "ASC"
+      possible values: "asc", "desc"   
+      default: "asc"
 - categories  
      comma-seperated list of strings
 
