@@ -44,8 +44,7 @@ Body: Json list of recipes (the information of each recipe (e.g. title, descript
 "image_path": "imagePath2",  
 "categories": ["category3", "category4"],  
 "cooking_time": 45  
-}  
-]  
+}]    
 }"
 
 
