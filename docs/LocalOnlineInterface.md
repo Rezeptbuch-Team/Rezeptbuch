@@ -27,6 +27,28 @@ Status Code: 200
 Headers: Content-Type: application/json  
 Body: Json list of recipes (the information of each recipe (e.g. title, description) is saved in key-value-pairs)  
 
+##### Example Body:
+{  
+"recipes": [{  
+"hash": "asdafc",  
+"title": "title1",  
+"description": "description1",  
+"image_path": "imagePath1",  
+"categories": ["category1", "category2"],  
+"cooking_time": 15  
+},  
+{  
+"hash": "asdafc",  
+"title": "title2",  
+"description": "description2",  
+"image_path": "imagePath2",  
+"categories": ["category3", "category4"],  
+"cooking_time": 45  
+}  
+]  
+}"
+
+
 ### /upload
 #### Request  
 Method: POST  
