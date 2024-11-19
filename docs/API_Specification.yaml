@@ -6,7 +6,52 @@ info:
     It also supports features such as filtering recipes, managing categories, and syncing data between clients and the server.
   version: 1.0.0
 tags:
-  - name: Recipes
+  - name: recipes
     description: Endpoints related to managing recipes
-  - name: Categories
+  - name: categories
     description: Endpoints related to managing recipe categories
+
+paths:
+  /list:
+    get:
+      tags:
+        - recipes
+      summary: List recipes
+      description: Multiple filter/sort options can be specified in the parameters
+      parameters:
+        - name: order_by
+          in: query
+          description: What the recipes should be ordered by
+          required: false
+          schema:
+            type: string
+            default: title
+            enum:
+              - title
+              - cooking_time
+      responses:
+        '200':
+          description: successful operation
+          content: 
+            application/json:
+              schema: 
+                type: array
+                items:
+                  $ref: '#/components/schemas/Recipe'
+                  
+components:
+  schemas:
+    Recipe:
+      type: object
+      properties:
+        offset:
+          type: integer
+          format: int64
+          example: 30
+        count:
+          type: integer
+          format: int64
+          example: 15
+          
+          
+        
