@@ -19,6 +19,19 @@ paths:
       summary: List recipes
       description: Multiple filter/sort options can be specified in the parameters
       parameters:
+        - name: offset
+          in: query
+          description: How many recipes should be skipped
+          required: false
+          schema:
+            type: integer
+            default: 0
+        - name: count
+          in: query
+          description: How many recipes should be returned
+          required: true
+          schema:
+            type: integer
         - name: order_by
           in: query
           description: What the recipes should be ordered by
@@ -29,6 +42,24 @@ paths:
             enum:
               - title
               - cooking_time
+        - name: order
+          in: query
+          description: What direction the order should have
+          required: false
+          schema:
+            type: string
+            default: asc
+            enum:
+              - asc
+              - desc
+        - name: categories
+          in: query
+          description: Which categories should be included (if none are specified dont filter by categories)
+          required: false
+          schema:
+            type: array
+            items: 
+              type: string
       responses:
         '200':
           description: successful operation
@@ -41,6 +72,8 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/Recipe'
+        '400':
+          description: Bad Request (e.g. value for order_by not title or cooking_time)
                   
 components:
   schemas:
