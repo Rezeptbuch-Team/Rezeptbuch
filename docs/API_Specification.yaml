@@ -74,7 +74,52 @@ paths:
                       $ref: '#/components/schemas/Recipe'
         '400':
           description: Bad Request (e.g. value for order_by not title or cooking_time)
-                  
+          
+  /upload:
+    post:
+      tags:
+        - recipes
+      summary: Upload an XML file
+      description: Endpoint to upload an XML file containing recipe data.
+      requestBody:
+        content: 
+          application/xml:
+            schema:
+              type: string
+              format: binary
+      responses:
+        '200':
+          description: successful upload
+        '400':
+          description: Bad request, e.g., malformed XML or validation error
+  
+  /update:
+    post:
+      tags:
+        - recipes
+      summary: Upload an XML file
+      description: Endpoint to upload an XML file containing changed recipe data
+      parameters:
+        - name: previous_hash
+          in: query
+          description: the hash under which the recipe was known before changing it
+          required: true
+          schema:
+            type: string
+          example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
+      requestBody:
+        content: 
+          application/xml:
+            schema:
+              type: string
+              format: binary
+      responses:
+        '200':
+          description: successful update
+        '400':
+          description: Bad request, e.g., malformed XML, validation error or no recipe to be updated found
+
+
 components:
   schemas:
     Recipe:
