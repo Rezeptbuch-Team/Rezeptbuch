@@ -6,16 +6,18 @@ info:
     It also supports features such as filtering recipes, managing categories, and syncing data between clients and the server.
   version: 1.0.0
 tags:
-  - name: recipes
-    description: Endpoints related to managing recipes
-  - name: categories
-    description: Endpoints related to managing recipe categories
+  - name: Recipes
+    description: Endpoints related to recipes
+  - name: Images
+    description: Endpoints related to images
+  - name: Categories
+    description: Endpoints related to categories
 
 paths:
-  /list:
+  /recipes:
     get:
       tags:
-        - recipes
+        - Recipes
       summary: List recipes
       description: Multiple filter/sort options can be specified in the parameters
       parameters:
@@ -75,12 +77,10 @@ paths:
                       $ref: '#/components/schemas/Recipe'
         '400':
           description: Bad Request (e.g. value for order_by not title or cooking_time)
-          
-  /upload/recipe:
     post:
       tags:
-        - recipes
-      summary: Upload an XML file
+        - Recipes
+      summary: Upload a recipe
       description: Endpoint to upload an XML file containing recipe data
       requestBody:
         content: 
@@ -93,42 +93,38 @@ paths:
           description: successful upload
         '400':
           description: Bad request, e.g., malformed XML or validation error
-  
-  /upload/image:
-    post:
+          
+  /recipes/{hash}:
+    get:
       tags:
-        - recipes
-      summary: Upload an image
-      description: Endpoint to upload an image of a recipe
+        - Recipes
+      summary: Download a recipe
+      description: Retrieve a recipe specified by a hash
       parameters:
         - name: hash
-          in: query
-          description: Hash of the recipe to which the image belongs
+          in: path
+          description: Hash of the recipe
           required: true
           schema:
             type: string
-            example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
-      requestBody:
-        content: 
-          image/png:
-            schema:
-              type: string
-              format: binary
       responses:
         '200':
-          description: successful upload
-        '400':
-          description: Bad request, e.g., recipe with given hash not found
-  
-  /update/recipe:
-    post:
+          description: Success
+          content:
+            application/xml:
+              schema:
+                type: string
+                format: binary
+        '404':
+          description: Recipe not found (e.g. recipe with specified hash does not exist)
+    put:
       tags:
-        - recipes
-      summary: Update an XML file
+        - Recipes
+      summary: Update a recipe
       description: Endpoint to upload an XML file containing changed recipe data
       parameters:
-        - name: previous_hash
-          in: query
+        - name: hash
+          in: path
           description: the hash under which the recipe was known before changing it
           required: true
           schema:
@@ -145,36 +141,11 @@ paths:
           description: successful update
         '400':
           description: Bad request, e.g., malformed XML, validation error or no recipe to be updated found
-  /update/image:
-    post:
-      tags:
-        - recipes
-      summary: Update an image
-      description: Endpoint to upload an image to change the image of a recipe
-      parameters:
-        - name: hash
-          in: query
-          description: Hash of the recipe to which the image belongs
-          required: true
-          schema:
-            type: string
-            example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
-      requestBody:
-        content: 
-          application/xml:
-            schema:
-              type: string
-              format: binary
-      responses:
-        '200':
-          description: successful update
-        '400':
-          description: Bad request, e.g., recipe with given hash not found
 
-  /list/categories:
+  /categories:
     get:
       tags:
-        - categories
+        - Categories
       summary: List categories
       description: List of categories available to filter by
       parameters:
@@ -206,7 +177,88 @@ paths:
                       type: string
         '400':
           description: no categories found
-            
+    
+  /images:
+    post:
+      tags:
+        - Images
+      summary: Upload an image
+      description: Endpoint to upload an image of a recipe
+      parameters:
+        - name: hash
+          in: query
+          description: Hash of the recipe to which the image belongs
+          required: true
+          schema:
+            type: string
+            example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
+      requestBody:
+        content: 
+          image/png:
+            schema:
+              type: string
+              format: binary
+      responses:
+        '200':
+          description: successful upload
+        '400':
+          description: Bad request, e.g., recipe with given hash not found
+  /images/{hash}:
+    get:
+      tags:
+        - Images
+      summary: Download an image
+      description: Retrieve an image specified by a hash referring to a recipe
+      parameters:
+        - name: hash
+          in: path
+          description: Hash of the recipe to which the image belongs
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            image/png:
+              schema:
+                type: string
+                format: binary
+            image/jpeg:
+              schema:
+                type: string
+                format: binary
+        '404':
+          description: Image not found (e.g. recipe with specified hash does not exist or does not have an image)
+    put:
+      tags:
+        - Images
+      summary: Update an image
+      description: Endpoint to upload an image to change the image of a recipe
+      parameters:
+        - name: hash
+          in: path
+          description: Hash of the recipe to which the image belongs
+          required: true
+          schema:
+            type: string
+            example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
+      requestBody:
+        content: 
+          image/png:
+            schema:
+              type: string
+              format: binary
+          image/jpeg:
+            schema:
+              type: string
+              format: binary
+      responses:
+        '200':
+          description: successful update
+        '400':
+          description: Bad request, e.g., recipe with given hash not found      
+          
           
 components:
   schemas:
