@@ -13,9 +13,9 @@
 
 ## Architectural Decisions
 - TDD/Mocking
-- Dependency Injection/Modularity
+- Dependency Injection/Modularity (OCP)
 - MVVM in the frontend
-- Separation of concerns in the application logic
+- Separation of concerns in the application logic (SRP)
 - Decoupling of the application and the server, only communicating through a REST-API
 - Consistent UI/UX patterns
 - Ensure data integrity through the use of hashes
