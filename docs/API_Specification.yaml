@@ -28,10 +28,11 @@ paths:
             default: 0
         - name: count
           in: query
-          description: How many recipes should be returned
+          description: How many recipes should be returned (max 25)
           required: true
           schema:
             type: integer
+            maximum: 25
         - name: order_by
           in: query
           description: What the recipes should be ordered by
@@ -75,12 +76,12 @@ paths:
         '400':
           description: Bad Request (e.g. value for order_by not title or cooking_time)
           
-  /upload:
+  /upload/recipe:
     post:
       tags:
         - recipes
       summary: Upload an XML file
-      description: Endpoint to upload an XML file containing recipe data.
+      description: Endpoint to upload an XML file containing recipe data
       requestBody:
         content: 
           application/xml:
@@ -93,11 +94,37 @@ paths:
         '400':
           description: Bad request, e.g., malformed XML or validation error
   
-  /update:
+  /upload/image:
     post:
       tags:
         - recipes
-      summary: Upload an XML file
+      summary: Upload an image
+      description: Endpoint to upload an image of a recipe
+      parameters:
+        - name: hash
+          in: query
+          description: Hash of the recipe to which the image belongs
+          required: true
+          schema:
+            type: string
+            example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
+      requestBody:
+        content: 
+          image/png:
+            schema:
+              type: string
+              format: binary
+      responses:
+        '200':
+          description: successful upload
+        '400':
+          description: Bad request, e.g., recipe with given hash not found
+  
+  /update/recipe:
+    post:
+      tags:
+        - recipes
+      summary: Update an XML file
       description: Endpoint to upload an XML file containing changed recipe data
       parameters:
         - name: previous_hash
@@ -106,7 +133,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
+            example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
       requestBody:
         content: 
           application/xml:
@@ -118,18 +145,88 @@ paths:
           description: successful update
         '400':
           description: Bad request, e.g., malformed XML, validation error or no recipe to be updated found
+  /update/image:
+    post:
+      tags:
+        - recipes
+      summary: Update an image
+      description: Endpoint to upload an image to change the image of a recipe
+      parameters:
+        - name: hash
+          in: query
+          description: Hash of the recipe to which the image belongs
+          required: true
+          schema:
+            type: string
+            example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
+      requestBody:
+        content: 
+          application/xml:
+            schema:
+              type: string
+              format: binary
+      responses:
+        '200':
+          description: successful update
+        '400':
+          description: Bad request, e.g., recipe with given hash not found
 
-
+  /list/categories:
+    get:
+      tags:
+        - categories
+      summary: List categories
+      description: List of categories available to filter by
+      parameters:
+        - name: offset
+          in: query
+          description: How many recipes should be skipped
+          required: false
+          schema:
+            type: integer
+            default: 0
+        - name: count
+          in: query
+          description: How many recipes should be returned (max 50)
+          required: true
+          schema:
+            type: integer
+            maximum: 50
+      responses:
+        '200':
+          description: successful operation
+          content: 
+            application/json:
+              schema: 
+                type: object
+                properties:
+                  categories:
+                    type: array
+                    items:
+                      type: string
+        '400':
+          description: no categories found
+            
+          
 components:
   schemas:
     Recipe:
       type: object
       properties:
-        offset:
-          type: integer
-          format: int64
-          example: 30
-        count:
-          type: integer
-          format: int64
-          example: 15
+        hash:
+          type: string
+          example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
+        title:
+          type: string
+          example: Loco moco
+        description:
+          type: string
+          example: A traditional Hawaiian dish consisting of rice, beef, gravy, and a sunny-side up fried egg.
+        categories:
+          type: array
+          example: ["beef", "hawaiian"]
+          items:
+            type: string
+        cooking_time:
+          type: string
+          example: 20
