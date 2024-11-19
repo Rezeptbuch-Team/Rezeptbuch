@@ -1,4 +1,5 @@
 # Interface between Application and Server
+# Deprecated. New: API_Specification
 ## Endpoints
 ### /list
 #### Request  
