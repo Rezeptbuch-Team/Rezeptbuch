@@ -1,0 +1,12 @@
+openapi: 3.0.0
+info:
+  title: Rezeptbuch API
+  description: >
+    The Rezeptbuch API provides endpoints to manage recipes, including listing, creating, downloading and updating recipes. 
+    It also supports features such as filtering recipes, managing categories, and syncing data between clients and the server.
+  version: 1.0.0
+tags:
+  - name: Recipes
+    description: Endpoints related to managing recipes
+  - name: Categories
+    description: Endpoints related to managing recipe categories
