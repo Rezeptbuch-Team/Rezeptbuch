@@ -35,9 +35,12 @@ paths:
           content: 
             application/json:
               schema: 
-                type: array
-                items:
-                  $ref: '#/components/schemas/Recipe'
+                type: object
+                properties:
+                  recipes:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Recipe'
                   
 components:
   schemas:
@@ -52,6 +55,3 @@ components:
           type: integer
           format: int64
           example: 15
-          
-          
-        
