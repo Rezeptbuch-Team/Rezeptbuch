@@ -10,3 +10,14 @@
 |Security|Data integrity|Ensure recipe data is not lost or corrupted during updates or syncing|H|M|
 |Availability|Offline access|Users should be able to view and search saved/local recipes offline|H|M|
 |Scalability|Recipe data capacity|Efficiently manage and query up to 1 million stored recipes|M|H|
+
+## Architectural Decisions
+- TDD/Mocking
+- Dependency Injection/Modularity
+- MVVM in the frontend
+- Separation of concerns in the application logic
+- Decoupling of the application and the server, only communicating through a REST-API
+- Consistent UI/UX patterns
+- Ensure data integrity through the use of hashes
+- Local data storage and database to support offline access
+
