@@ -79,6 +79,13 @@ It also addresses size, performance, and quality considerations.
 
 
 ## 3. Architectural Goals and Constraints
+The architecture of Rezeptbuch is shaped by Architecturally Significant Requirements (ASRs)
+that define the system's quality attributes and constraints.
+These requirements address critical aspects such as performance, testability, maintainability,
+usability and scalability.
+
+For a detailed overview of the ASRs and the associated architectural decisions,
+refer to the [ASR document](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/ASR.md).
 
 
 ## 4. Use-Case-View
