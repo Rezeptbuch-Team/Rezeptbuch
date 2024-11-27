@@ -62,6 +62,7 @@ scalability, and usability goals.
 | Abbreviation                                | Explanation   |
 | -----------------------------------------|:---------- |
 | SAD | Software Architecture Document |
+| ASR | Architecturally Significant Requirements |
 
 ### 1.4 References
 | Title                                                              | Date       | Publishing organization   |
@@ -79,12 +80,12 @@ It also addresses size, performance, and quality considerations.
 
 
 ## 3. Architectural Goals and Constraints
-The architecture of Rezeptbuch is shaped by Architecturally Significant Requirements (ASRs)
+The architecture of Rezeptbuch is shaped by Architecturally Significant Requirements (ASR)
 that define the system's quality attributes and constraints.
 These requirements address critical aspects such as performance, testability, maintainability,
 usability and scalability.
 
-For a detailed overview of the ASRs and the associated architectural decisions,
+For a detailed overview of the ASR and the associated architectural decisions,
 refer to the [ASR document](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/ASR.md).
 
 
@@ -113,6 +114,13 @@ to provide deeper insights into their implementation:
 - [Show recipe](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/UCRS/UCRS_ShowRecipe.md)
 
 ## 5. Logical View
+The MAUI frontend interacts with various services provided by the application logic
+to implement the core functionality of Rezeptbuch.
+These services manage tasks such as recipe retrieval, filtering and synchronization,
+ensuring a clean separation between the user interface and the backend logic.
+
+The following diagram illustrates the class structure of the application logic:
+![Application Class Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/class_diagrams/ApplicationLogicDiagram.drawio.png).
 
 
 ## 6. Process View
