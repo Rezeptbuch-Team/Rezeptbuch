@@ -131,15 +131,15 @@ Below are the component-level sequence diagrams for core processes:
 Demonstrates how the system retrieves and displays detailed information about a specific recipe.  
 ![Show Recipe Sequence Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/ShowRecipeSequenceDiagram.png)
 
-3. Navigate Through Recipe:  
+2. Navigate Through Recipe:  
 Visualizes the step-by-step process of navigating a recipe.  
 ![Navigate Through Recipe Sequence Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/NavigateThroughRecipeSequenceDiagram.png)
 
-4. List Local Recipes:  
+3. List Local Recipes:  
 Shows how the system fetches locally saved recipes.  
 ![List Local Recipes Sequence Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/ListLocalRecipesSequenceDiagram.png)
 
-6. List Online Recipes:  
+4. List Online Recipes:  
 Depicts the process of retrieving recipes from the server.  
 ![List Online Recipes Sequence Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/ListOnlineRecipesSequenceDiagram.png)
 
