@@ -120,11 +120,28 @@ These services manage tasks such as recipe retrieval, filtering and synchronizat
 ensuring a clean separation between the user interface and the backend logic.
 
 The following diagram illustrates the class structure of the application logic:
-![Application Class Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/class_diagrams/ApplicationLogicDiagram.drawio.png).
+![Application Class Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/class_diagrams/ApplicationLogicDiagram.drawio.png)
 
 
 ## 6. Process View
+The Process View illustrates the runtime interactions between the system's components during key operations.
+Below are the component-level sequence diagrams for core processes:
 
+1. Show Recipe:  
+Demonstrates how the system retrieves and displays detailed information about a specific recipe.  
+![Show Recipe Sequence Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/ShowRecipeSequenceDiagram.png)
+
+3. Navigate Through Recipe:  
+Visualizes the step-by-step process of navigating a recipe.  
+![Navigate Through Recipe Sequence Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/NavigateThroughRecipeSequenceDiagram.png)
+
+4. List Local Recipes:  
+Shows how the system fetches locally saved recipes.  
+![List Local Recipes Sequence Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/ListLocalRecipesSequenceDiagram.png)
+
+6. List Online Recipes:  
+Depicts the process of retrieving recipes from the server.  
+![List Online Recipes Sequence Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/ListOnlineRecipesSequenceDiagram.png)
 
 ## 7. Deployment View
 
