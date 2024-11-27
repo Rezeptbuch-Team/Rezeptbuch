@@ -66,8 +66,8 @@ scalability, and usability goals.
 ### 1.4 References
 | Title                                                              | Date       | Publishing organization   |
 | -------------------------------------------------------------------|:----------:| ------------------------- |
-| [Rezeptbuch Blog](https://github.com/GermanJesus-lul/Rezeptbuch/discussions/categories/announcements)| 21.10.2024 | Rezeptbuch Team  |
-| [GitHub](https://github.com/GermanJesus-lul/Rezeptbuch) | 21.10.2024 | Rezeptbuch Team  |
+| [Rezeptbuch Blog](https://github.com/GermanJesus-lul/Rezeptbuch/discussions/categories/announcements)| 27.11.2024 | Rezeptbuch Team  |
+| [GitHub](https://github.com/GermanJesus-lul/Rezeptbuch) | 27.11.2024 | Rezeptbuch Team  |
 
 
 ### 1.5 Overview
