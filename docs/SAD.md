@@ -82,7 +82,9 @@ It also addresses size, performance, and quality considerations.
 
 
 ## 4. Use-Case-View
-Below is the Use Case Diagram for Rezeptbuch, which provides a visual representation of the system’s core use cases and the interactions between actors and the system:
+Below is the Use Case Diagram for Rezeptbuch, which provides a visual representation of the system’s core use cases
+and the interactions between actors and the system:
+
 ![Use Case Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/UseCaseDiagram.png)
 
 Below is the list of key use cases for Rezeptbuch, each detailing a specific interaction between the user and the system:
