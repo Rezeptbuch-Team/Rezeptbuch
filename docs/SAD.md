@@ -63,6 +63,10 @@ scalability, and usability goals.
 | -----------------------------------------|:---------- |
 | SAD | Software Architecture Document |
 | ASR | Architecturally Significant Requirements |
+| DI  | Dependency Injection |
+| OCP | Open-Closed-Principle |
+| SRP | Single-Responsibility-Principle |
+
 
 ### 1.4 References
 | Title                                                              | Date       | Publishing organization   |
@@ -161,3 +165,20 @@ Depicts the process of retrieving recipes from the server.
 
 
 ## 11. Quality
+The architecture of Rezeptbuch is designed to support key quality attributes:  
+- **Performance**:  
+Local recipe lists load in under 0.5 seconds and online recipes in under 1.5 seconds, achieved through optimized data retrieval mechanisms.
+- **Testability**:  
+Test-Driven Development (TDD) ensures high code quality, supported by mocking frameworks for effective testing of isolated components.
+- **Maintainability**:  
+The modular codebase follows principles like Dependency Injection (DI), Open-Closed-Principle (OCP) and Single-Responsibility-Principle (SRP), enabling straightforward updates and feature integration.
+- **Usability**:  
+The intuitive UI requires no formal training, with consistent UX patterns ensuring ease of use for all users.
+- **Security**:  
+Data integrity is safeguarded using hashes during syncing.
+- **Availability**:  
+Offline access is supported through local storage and database synchronization, allowing uninterrupted usage.
+- **Scalability**:  
+Designed to handle up to 1 million recipes.  
+
+This design ensures the system is robust, user-friendly, and adaptable to future needs.
