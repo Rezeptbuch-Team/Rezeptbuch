@@ -154,9 +154,12 @@ Depicts the process of retrieving recipes from the server.
 
 ### 8.1 Overview
 The Rezeptbuch implementation model is organized into three main layers:
-1. **Frontend**: Handles user interaction and presentation
-2. **Application Logic**: Serves as the core of the application, managing workflows (e.g., startup logic, recipe handling) and acting as the intermediary between the Frontend and API layers.
-3. **API**: Provides the online service for recipe storage, retrieval and listing.
+1. **Frontend**:  
+   Handles user interaction and presentation
+3. **Application Logic**:  
+   Serves as the core of the application, managing workflows (e.g., startup logic, recipe handling) and acting as the intermediary between the Frontend and API layers.
+5. **API**:  
+   Provides the online service for recipe storage, retrieval and listing.
 
 ### 8.2 Layers
 
