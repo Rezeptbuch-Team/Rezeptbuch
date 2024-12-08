@@ -47,9 +47,14 @@
     - **Testability**: Supports Test-Driven Development (TDD).
 
 - **Additional Decisions**:
-  - **MVVM in Frontend**: Ensures a clean separation of UI and logic.
-  - **RESTful API**: Standardized communication between application and server.
-  - **Modularity**: Simplifies maintenance and future development.
+  - TDD/Mocking
+  - Dependency Injection/Modularity (OCP)
+  - MVVM in the frontend
+  - Separation of concerns in the application logic (SRP)
+  - Decoupling of the application and the server, only communicating through a RESTful API
+  - Consistent UI/UX patterns
+  - Ensure data integrity through the use of hashes
+  - Local data storage and database to support offline access
 
 ### **Software Tools/Platforms/Technologies**
 
