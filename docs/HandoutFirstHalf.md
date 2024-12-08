@@ -31,7 +31,7 @@
 ## Overall Use Case Diagram
 
 **Diagram:**  
-![Overall Use Case Diagram]()
+![Overall Use Case Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/UseCaseDiagram.png)
 
 **Focus for the Demo:**  
 - List local recipes
