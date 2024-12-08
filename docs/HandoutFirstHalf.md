@@ -22,9 +22,9 @@
 #### 3. Hours per Phase
 | Phase               | Hours |
 |---------------------|-------|
-| Inception           |       |
-| Elaboration         |       |
-| Construction        |       |
+| Inception           | 17    |
+| Elaboration         | 11    |
+| Construction        | 16    |
 
 
 
