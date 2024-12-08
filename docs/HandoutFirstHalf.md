@@ -45,7 +45,6 @@
   - Key Arguments:
     - **Separation of Concerns**: Clear distinction between the user interface, logic, and backend.
     - **Flexibility**: Easily extendable for new features.
-    - **Testability**: Supports Test-Driven Development (TDD).
 
 - **Additional Decisions**:
   - TDD/Mocking
