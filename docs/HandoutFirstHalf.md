@@ -6,7 +6,7 @@
 | Person               | Hours     | Main Contribution                        |
 |----------------------|-----------|------------------------------------------|
 | Julius Göler         | 28        | Application Logic, Project Documentation |
-| Luca Grimm           | 9         | Frontend Design/Development (MAUI)       |
+| Luca Grimm           | 13        | Frontend Design/Development (MAUI)       |
 | Jaron Köhler         | 5         | Server/API                               |
 | Tom Jenrich          | 2         | Server/API                               |
 
@@ -17,14 +17,14 @@
 | Public Relations            | 5         |
 | Software Architecture       | 10        |
 | Tool Setup                  | 7         |
-| Implementation (Prototype)  | 7         |
+| Implementation (Prototype)  | 11        |
 
 #### 3. Hours per Phase
 | Phase               | Hours |
 |---------------------|-------|
 | Inception           | 17    |
 | Elaboration         | 11    |
-| Construction        | 16    |
+| Construction        | 20    |
 
 
 
