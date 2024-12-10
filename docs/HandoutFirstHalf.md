@@ -7,7 +7,7 @@
 |----------------------|-----------|------------------------------------------|
 | Julius Göler         | 28        | Application Logic, Project Documentation |
 | Luca Grimm           | 13        | Frontend Design/Development (MAUI)       |
-| Jaron Köhler         | 5         | Server/API                               |
+| Jaron Köhler         | 7         | Server/API                               |
 | Tom Jenrich          | 2         | Server/API                               |
 
 #### 2. Hours per Workflow
