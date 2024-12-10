@@ -17,14 +17,14 @@
 | Public Relations            | 5         |
 | Software Architecture       | 10        |
 | Tool Setup                  | 7         |
-| Implementation (Prototype)  | 11        |
+| Implementation (Prototype)  | 13        |
 
 #### 3. Hours per Phase
 | Phase               | Hours |
 |---------------------|-------|
 | Inception           | 17    |
 | Elaboration         | 11    |
-| Construction        | 20    |
+| Construction        | 22    |
 
 
 
