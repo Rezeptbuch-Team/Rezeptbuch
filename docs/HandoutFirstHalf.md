@@ -15,9 +15,9 @@
 |-----------------------------|-----------|
 | Requirements Analysis       | 15        |
 | Public Relations            | 5         |
-| Software Architecture       | 10        |
+| Software Architecture       | 12        |
 | Tool Setup                  | 7         |
-| Implementation (Prototype)  | 12        |
+| Implementation (Prototype)  | 10        |
 
 #### 3. Hours per Phase
 | Phase               | Hours |
