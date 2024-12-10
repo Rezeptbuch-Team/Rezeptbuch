@@ -1,7 +1,7 @@
 # Rezeptbuch
 
 ## Presentation
-[PDF](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/PresentationFirstHalf.pdf)
+[PDF](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/PresentationFirstHalf.pdf)  
 [Google Slides](https://docs.google.com/presentation/d/19ac-nlXZU6XP5UNWN2HKG892zUa7CUVoy0YfmfxGHDY/edit#slide=id.g31d7731fb03_1_0)
 
 ## Workload Statistics
