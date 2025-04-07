@@ -22,6 +22,17 @@ information:
 - cooking time
 - instructions: seperated into steps, inline element for ingredient including amount
 
+## Upload/Update concept
+Das Nutzen der Online-Funktionen muss vom Nutzer aktiviert werden.
+Bei Aktivierung wird eine UUID generiert, die verschlüsselt auf dem PC gespeichert wird.
+(Genauer Klärung wie das gemacht wird)
+
+Diese UUID ist die Identifikation des Nutzers beim Upload und beim Aktualisieren.
+Sie wird nicht herausgegeben beim Abrufen von Rezepten sondern nur in der Remote-Datenbank gespeichert.
+Beim Upload eines Rezeptes muss eine UUID mitgesendet werden.
+Beim Updaten eines Rezeptes muss auch die UUID mitgesendet werden.
+Der Server vergleicht dann, ob sie der des Rezepthochladers entspricht.
+
 ## Local DB
 - id/key = hash of recipe
 - is_downloaded: if the recipe was downloaded or if it is created by the user
