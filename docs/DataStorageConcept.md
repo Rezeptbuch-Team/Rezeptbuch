@@ -54,6 +54,7 @@ save as little as possible in the db to decrease redundancy/storage, but still i
 recommendation (may be changed by the server team)
 
 - id/key = hash of recipe
+- uploader UUID
 - title
 - description
 - image path
