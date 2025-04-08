@@ -23,14 +23,14 @@ information:
 - instructions: seperated into steps, inline element for ingredient including amount
 
 ## Upload/Update concept
-Das Nutzen der Online-Funktionen muss vom Nutzer aktiviert werden.
-Bei Aktivierung wird eine UUID generiert, die auf dem PC gespeichert wird.
+Using the online features must be activated by the user.
+Upon activation, a UUID is generated and stored on the user’s PC.
 
-Diese UUID ist die Identifikation des Nutzers beim Upload und beim Aktualisieren.
-Sie wird nicht herausgegeben beim Abrufen von Rezepten sondern nur in der Remote-Datenbank gespeichert.
-Beim Upload eines Rezeptes muss eine UUID mitgesendet werden.
-Beim Updaten eines Rezeptes muss auch die UUID mitgesendet werden.
-Der Server vergleicht dann, ob sie der des Rezepthochladers entspricht.
+This UUID serves as the user's identification when uploading or updating recipes.
+It is not disclosed when retrieving recipes, but is only stored in the remote database.
+When uploading a recipe, the UUID must be sent along.
+When updating a recipe, the UUID must also be included.
+The server then checks whether it matches the one of the original uploader.
 
 ## Local DB
 - id/key = hash of recipe
