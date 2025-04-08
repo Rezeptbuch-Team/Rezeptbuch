@@ -24,8 +24,7 @@ information:
 
 ## Upload/Update concept
 Das Nutzen der Online-Funktionen muss vom Nutzer aktiviert werden.
-Bei Aktivierung wird eine UUID generiert, die verschlüsselt auf dem PC gespeichert wird.
-(Genauer Klärung wie das gemacht wird. Möglicherweise senden der UUID vom Server)
+Bei Aktivierung wird eine UUID generiert, die auf dem PC gespeichert wird.
 
 Diese UUID ist die Identifikation des Nutzers beim Upload und beim Aktualisieren.
 Sie wird nicht herausgegeben beim Abrufen von Rezepten sondern nur in der Remote-Datenbank gespeichert.
