@@ -51,6 +51,9 @@ save as little as possible in the db to decrease redundancy/storage, but still i
 (e.g. recipe steps can be kept in the xml files, because they are not used when listing recipes)
 
 [DBML](localDB.dbml)
+[dbdiagram](https://dbdiagram.io/d/Rezeptbuch-local-DB-67f64ce44f7afba184ed8cd3)
+![dbdiagram](![Rezeptbuch local DB](https://github.com/user-attachments/assets/0777ae6a-98f9-456e-9177-a23b1300c7f1)
+
 
 ## Remote DB
 recommendation (may be changed by the server team)
