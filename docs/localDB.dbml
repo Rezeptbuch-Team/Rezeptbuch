@@ -1,0 +1,40 @@
+Table recipes {
+  hash TEXT PK
+  is_download INTEGER
+  is_published INTEGER
+  is_modified INTEGER
+  last_published_hash TEXT
+  title TEXT
+  description TEXT
+  image_path TEXT
+  cooking_time TEXT
+  file_path TEXT
+}
+
+Table categories {
+  id INTEGER PK
+  name TEXT
+}
+
+Table recipe_category {
+  hash TEXT
+  category_id INTEGER
+}
+
+Table ingredients {
+  id INTEGER PK
+  name TEXT
+}
+
+Table recipe_ingredient {
+  hash TEXT
+  ingredient_id INTEGER
+}
+
+Ref: "recipes"."hash" < "recipe_category"."hash"
+
+Ref: "recipe_category"."category_id" - "categories"."id"
+
+Ref: "recipes"."hash" < "recipe_ingredient"."hash"
+
+Ref: "recipe_ingredient"."ingredient_id" - "ingredients"."id"
