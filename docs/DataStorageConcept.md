@@ -49,6 +49,8 @@ The server then checks whether it matches the one of the original uploader.
 Goal:  
 save as little as possible in the db to decrease redundancy/storage, but still insure functionality and performance/speed
 
+[DBML](localDB.dbml)
+
 ## Remote DB
 recommendation (may be changed by the server team)
 
