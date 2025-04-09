@@ -1,5 +1,5 @@
 # Data Storage Concept
-## Storage path
+## Local Storage path
 ```cs
 FileSystem.AppDataDirectory
 ```
