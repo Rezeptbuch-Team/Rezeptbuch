@@ -1,4 +1,10 @@
 # Data Storage Concept
+## Storage path
+```cs
+FileSystem.AppDataDirectory
+```
+
+
 ## Recipe
 XML-File with custom schema
 
