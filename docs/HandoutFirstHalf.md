@@ -4,6 +4,15 @@
 [PDF](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/PresentationFirstHalf.pdf)  
 [Google Slides](https://docs.google.com/presentation/d/19ac-nlXZU6XP5UNWN2HKG892zUa7CUVoy0YfmfxGHDY/edit#slide=id.g31d7731fb03_1_0)
 
+## Vision
+**Our Vision**  
+Rezeptbuch is more than just another recipe app.
+Our goal is to create a clean, distraction-free cooking companion that puts users in control.
+Unlike many existing platforms, Rezeptbuch works fully offline by default, with no ads, no sign-up required, and no unnecessary features.
+Users can store their personal recipes locally and only opt in to online features if they choose to share.
+Even then, sharing is anonymous and simple.
+We believe in privacy, clarity, and giving users full ownership of their cooking experience.
+
 ## Workload Statistics
 
 ### 1. Hours per Person and Main Contribution
