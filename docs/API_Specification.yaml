@@ -4,7 +4,7 @@ info:
   description: >
     The Rezeptbuch API provides endpoints to manage recipes, including listing, creating, downloading and updating recipes. 
     It also supports features such as filtering recipes, managing categories, and syncing data between clients and the server.
-  version: 1.0.0
+  version: 1.1.0
 tags:
   - name: Recipes
     description: Endpoints related to recipes
@@ -82,6 +82,14 @@ paths:
         - Recipes
       summary: Upload a recipe
       description: Endpoint to upload an XML file containing recipe data
+      parameters:
+        - name: uuid
+          in: header
+          description: UUID of the uploading user
+          required: true
+          schema:
+            type: string
+            example: 1caf616b-be5b-4769-8083-229c253e5005
       requestBody:
         content: 
           application/xml:
@@ -130,6 +138,13 @@ paths:
           schema:
             type: string
             example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
+        - name: uuid
+          in: header
+          description: UUID of the uploading user
+          required: true
+          schema:
+            type: string
+            example: 1caf616b-be5b-4769-8083-229c253e5005
       requestBody:
         content: 
           application/xml:
@@ -177,32 +192,7 @@ paths:
                       type: string
         '400':
           description: no categories found
-    
-  /images:
-    post:
-      tags:
-        - Images
-      summary: Upload an image
-      description: Endpoint to upload an image of a recipe
-      parameters:
-        - name: hash
-          in: query
-          description: Hash of the recipe to which the image belongs
-          required: true
-          schema:
-            type: string
-            example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
-      requestBody:
-        content: 
-          image/png:
-            schema:
-              type: string
-              format: binary
-      responses:
-        '200':
-          description: successful upload
-        '400':
-          description: Bad request, e.g., recipe with given hash not found
+          
   /images/{hash}:
     get:
       tags:
@@ -230,6 +220,37 @@ paths:
                 format: binary
         '404':
           description: Image not found (e.g. recipe with specified hash does not exist or does not have an image)
+    post:
+      tags:
+        - Images
+      summary: Upload an image
+      description: Endpoint to upload an image of a recipe
+      parameters:
+        - name: hash
+          in: path
+          description: Hash of the recipe to which the image belongs
+          required: true
+          schema:
+            type: string
+            example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
+        - name: uuid
+          in: header
+          description: UUID of the uploading user
+          required: true
+          schema:
+            type: string
+            example: 1caf616b-be5b-4769-8083-229c253e5005
+      requestBody:
+        content: 
+          image/png:
+            schema:
+              type: string
+              format: binary
+      responses:
+        '200':
+          description: successful upload
+        '400':
+          description: Bad request, e.g., recipe with given hash not found; wrong user
     put:
       tags:
         - Images
@@ -243,6 +264,13 @@ paths:
           schema:
             type: string
             example: 36ec9bdaee807f2ae07f9f43c851ace40bad1e659f04f831704abe9d2efcf2df
+        - name: uuid
+          in: header
+          description: UUID of the uploading user
+          required: true
+          schema:
+            type: string
+            example: 1caf616b-be5b-4769-8083-229c253e5005
       requestBody:
         content: 
           image/png:
@@ -257,7 +285,7 @@ paths:
         '200':
           description: successful update
         '400':
-          description: Bad request, e.g., recipe with given hash not found      
+          description: Bad request, e.g., recipe with given hash not found; wrong user      
           
           
 components:
