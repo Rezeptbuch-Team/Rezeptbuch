@@ -1,5 +1,5 @@
 | Id | Risk category | Risk description | Probability (P) | Damage (D) | Risk score (PxD) | Mitigation strategy | Indicator | Contingency plan | Status | Responsible | Update date |
-|----|-----|----|----|----|----|----|----|----|----|
+|----|---------------|------------------|-----------------|------------|------------------|---------------------|-----------|------------------|--------|-------------|-------------|
 | R1 | Project | Delays due to new team member onboarding | 3 | 3 | 9 | onboarding documentation; check-ins | missed sprint goals | reassign tasks | Active | Luca Grimm | 22.04.2025 |
 | R2 | Technical | Local database is not performative enough | 2 | 4 | 8 | test with large datasets; optimize queries | slow response times | refactor queries; switch to a more performant database engine | Monitored | Julius Göler | 22.04.2025 |
 | R3 | Project | Team members being sick/absent | 4 | 2 | 8 | distribute knowledge; buffer in planning; good documentation | | reassign tasks; adjust sprint goals | Active | Julius Göler | 22.04.2025 |
