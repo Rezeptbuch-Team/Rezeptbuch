@@ -4,6 +4,8 @@
 Environment.SpecialFolder.ApplicationData
 ```
 
+bzw. %AppData%
+
 ## Recipe
 XML-File with custom schema
 
