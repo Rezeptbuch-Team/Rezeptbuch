@@ -1,9 +1,8 @@
 # Data Storage Concept
 ## Local Storage path
 ```cs
-FileSystem.AppDataDirectory
+Environment.SpecialFolder.ApplicationData
 ```
-
 
 ## Recipe
 XML-File with custom schema
