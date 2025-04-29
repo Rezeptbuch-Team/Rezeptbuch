@@ -178,7 +178,7 @@ The project owns a certain amount of tests. Each pushed commit should trigger th
 
 
 ## 6.2 Reporting on Test Coverage
-This happens automatically on a push.
+This happens automatically on a push through CI/CD Pipeline.
 
 ## 6.3 Perceived Quality Reports
 If a build of our CI/CD Pipeline fails the administrators will be messaged. This includes a fail due to a failed test.
