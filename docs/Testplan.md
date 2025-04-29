@@ -1,12 +1,3 @@
-# Application Core
-- unit tests
-- response time tests (local db)
-- stress test (local db)
-
-# GUI
-
-# API
-
 # Test plan
 
 - [Test plan](#test-plan)
@@ -105,24 +96,24 @@ The listing below identifies those test items: software, hardware, and supportin
 
 ### 4.1 Outline of Test Inclusions
 
-*Frontend: Next.js application: Web Client*:
+*Frontend: .NET Maui application*:
 
-- UI testing
-- Unit testing
+- manual UI/UX Testing
+- automated UI Testing (if there is enough time)
 
-*Backend: Spring Boot Application*:
+*Application Core: .NET*:
 
 - Unit testing
 - Integration testing (API Testing)
+- Stress Testing
+- Response-time Testing
 
+*API/Server: .NET*:
 
-### 4.2 Outline of Test Exclusions
-
-Because of time and resource constraints we will not do:
-
-- Stress tests
-- Load/Performance tests
-- Usability tests
+- Unit testing
+- Integration testing
+- Stress Testing
+- Response-time Testing
 
 ## 5. Test Approach
 
