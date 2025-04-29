@@ -126,46 +126,53 @@ Unit testing ensures, that the tested sourcecode works as expected. Therefore sm
 |                        | Description                                                                                                                                        |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Technique Objective    | Ensure that each unit of code (functions, methods, classes) works as intended                                                                      |
-| Technique              | Implement test methods using JUnit Framework, Mockito library (Backend)                                                                            |
-| Oracles                | Test results are logged in CI/CD tool (SonarCloud/GitHub Actions), and compared against expected output to determine if the tests passed or failed |
-| Required Tools         | JUnit 5 and Mockito Dependencies in Backend, Vitest in Frontend, CI/CD Pipeline                                                                    |
+| Technique              | Implement test methods using NUnit Framework                                                                           |
+| Oracles                | Test results should be logged in CI/CD tool (GitHub Actions), and compared against expected output to determine if the tests passed or failed |
+| Required Tools         | NUnit, CI/CD Pipeline                                                                    |
 | Success Criteria       | All tests pass.                                                                                                                                    |
 | Special Considerations | -                                                                                                                                                  |
 
 
-#### 5.1.2 UI Testing
+#### 5.1.2 Manual UI Testing
 
 UI testing evaluates the application's performance from a user's point of view, with the aim of verifying that the user interface operates as intended.
 
 |                        | Description                                                                                                                                                                           |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Technique Objective    | Test application automated from the perspective of the user through UI Test                                                                                                           |
-| Technique              | Writing test cases to simulate user interactions with the application's UI (mainly use cases).                                                                                        |
+| Technique Objective    | Test the application from the perspective of the user                                                                                                        |
+| Technique              | Manually execute common user interactions.                                                                                     |
 | Oracles                | Expect that the UI elements are displayed and behave as expected during test execution. Test results are compared against expected output to determine if the tests passed or failed. |
-| Required Tools         | to be investigated                                                                                                                                                                    |
+| Required Tools         |    n/a   |
 | Success Criteria       | All UI tests pass.                                                                                                                                                                    | 
 | Special Considerations | -                                                                                                                                                                                     |
 
 #### 5.1.3 Integration Testing (API Testing)
 
-API Testing is part of integration testing. Integration tests test multiple modules of an application together. The main goal of API testing is to ensure, that the provided APIs of the Backend behave as expected.
+API Testing is part of integration testing. Integration tests test multiple modules of an application together. The main goal of API testing is to ensure, that the communication between application and API/server functions correctly.
 
 |                        | Description                                                                                                                                        |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Technique Objective    | Ensure that the implemented API functions correctly and returns expected results                                                                   |
-| Technique              | Implement test methods using JUnit Framework and REST-assured library to perform HTTP requests and verify responses                                |            |
-| Oracles                | Test results are logged in CI/CD tool (SonarCloud/GitHub Actions), and compared against expected output to determine if the tests passed or failed |
-| Required Tools         | JUnit 5 and REST-assured library dependencies in Backend                                                                                           |
+| Technique Objective    | Ensure that the implemented API functions correctly and returns expected results. Ensure that the application addresses the API correctly                                                                 |
+| Technique              | Implement test methods using NUnit Framework to perform HTTP requests and verify responses                                |            |
+| Oracles                | Test results are logged in CI/CD tool (GitHub Actions), and compared against expected output to determine if the tests passed or failed |
+| Required Tools         | NUnit, CI/CD pipelines                                                                                           |
 | Success Criteria       | All tests pass.                                                                                                                                    |
 | Special Considerations | APIs must be in a testable state, e.g., mock objects are used for dependencies that may not be available during tests                              |
 
+#### 5.1.3 Stress/Response-time Testing
+
+|                        | Description|
+|------------------------|------------|
+| Technique Objective    | Ensure that the application backend and the API can handle large amounts of recipes and requests in an adequate response time. |
+| Technique              | Implement test methods to fill the database with recipes, make a lot of requests and register the response-time |
+| Oracles                | Test results are logged in CI/CD tool (Github Actions) and compared against expected response-times to determine if the tests passed or failed |
+| Required Tools         | NUnit, CI/CD pipelines |
+| Success Criteria       | All tests pass in adequate response-time |
+| Special Considerations | - |
+
 ### 5.2 Total Test Coverage
 
-The total test coverage of the backend should be above 51%.
-This threshold was set because we want to test a majority of our application with limited resources and time. Due to this, we didn't head for the commonly used 80%, but rather for a lower 51%.
-
-The results of the tests and code coverage can be seen in the [SonarCloud summary](./Metriken.md).
-
+The total test coverage should be above 80%.
 
 ## 6. Deliverables
 
