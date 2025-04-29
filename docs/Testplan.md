@@ -125,7 +125,7 @@ Unit testing ensures, that the tested sourcecode works as expected. Therefore sm
 | Technique Objective    | Ensure that each unit of code (functions, methods, classes) works as intended                                                                      |
 | Technique              | Implement test methods using NUnit Framework                                                                           |
 | Oracles                | Test results should be logged in CI/CD tool (GitHub Actions), and compared against expected output to determine if the tests passed or failed |
-| Required Tools         | NUnit, CI/CD Pipeline                                                                    |
+| Required Tools         | NUnit, CI/CD Pipeline, (moq)                                                                    |
 | Success Criteria       | All tests pass.                                                                                                                                    |
 | Special Considerations | -                                                                                                                                                  |
 
@@ -163,7 +163,7 @@ API Testing is part of integration testing. Integration tests test multiple modu
 | Technique Objective    | Ensure that the application backend and the API can handle large amounts of recipes and requests in an adequate response time. |
 | Technique              | Implement test methods to fill the database with recipes, make a lot of requests and register the response-time |
 | Oracles                | Test results are logged in CI/CD tool (Github Actions) and compared against expected response-times to determine if the tests passed or failed |
-| Required Tools         | NUnit, CI/CD pipelines |
+| Required Tools         | NUnit, CI/CD pipelines, (moq) |
 | Success Criteria       | All tests pass in adequate response-time |
 | Special Considerations | - |
 
