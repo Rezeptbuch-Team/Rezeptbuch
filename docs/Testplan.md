@@ -14,9 +14,6 @@
         - [4.2 Outline of Test Exclusions](#42-outline-of-test-exclusions)
     - [5. Test Approach](#5-test-approach)
         - [5.1 Testing Techniques and Types](#51-testing-techniques-and-types)
-            - [5.1.1 Unit Testing](#511-unit-testing)
-            - [5.1.2 UI Testing](#512-ui-testing)
-            - [5.1.3 Integration Testing (API Testing)](#513-integration-testing-api-testing)
         - [5.2 Total Test Coverage](#52-total-test-coverage)
     - [6. Deliverables](#6-deliverables)
         - [6.1 Test Evaluation Summaries](#61-test-evaluation-summaries)
@@ -177,11 +174,11 @@ The total test coverage should be above 80%.
 ## 6. Deliverables
 
 ## 6.1 Test Evaluation Summaries
-The project owns a certain amount of tests. Each pushed commit should trigger the projects CI/CD Pipeline, which builds the application and executes these tests with a code analysis with SonarCloud.
+The project owns a certain amount of tests. Each pushed commit should trigger the projects CI/CD Pipeline, which builds the application and executes these tests.
 
 
 ## 6.2 Reporting on Test Coverage
-This happens automatically on a push with SonarCloud.
+This happens automatically on a push.
 
 ## 6.3 Perceived Quality Reports
 If a build of our CI/CD Pipeline fails the administrators will be messaged. This includes a fail due to a failed test.
@@ -206,19 +203,16 @@ The following table sets forth the system resources for the test effort presente
 | Resource              | Quantity | Name and Type    |
 |-----------------------|:--------:|------------------|
 | CI/CD server          |    1     | GitHub Actions   |
-| local test machine    |    1     | notebook         |
+| local test machine    |    1     |                  |
 
 ### 8.2 Base Software Elements in the Test Environment
 The following base software elements are required in the test environment for this Test Plan.
 
 | Software Element Name        | Type and Other Notes       |
 |------------------------------|----------------------------|
-| IntelliJ, Visual Studio Code | Test Runner / IDE          |
-| JUnit 5                      | testing library            |
-| Mockito                      | library to mock components |
-| REST Assured                 | REST-API testing library   |
-
-
+| Visual Studio Code, Rider    | Test Explorer / Test Runner          |
+| NUnit                      | testing library            |
+| Moq                      | library to mock components |
 
 ### 8.3 Productivity and Support Tools
 The following tools will be employed to support the test process for this Test Plan.
@@ -226,7 +220,6 @@ The following tools will be employed to support the test process for this Test P
 | Tool Category or Type | Tool Brand Name                                        |
 |-----------------------|--------------------------------------------------------|
 | Repository            | [github.com](http://github.com/)                       |
-| SonarCloud            | [sonar](https://sonarcloud.io/)                        |
 | CI/CD Service         | [GitHub Actions](https://github.com/features/actions)  |
 
 
@@ -235,4 +228,3 @@ The following tools will be employed to support the test process for this Test P
 |------------------------------------------|----------------------------------------------------------|-------------------------------------|
 | Code has lots of side effects            | Refactor code (Clean Code principles)                    | publish new refactored tests        |
 | Test Runner is not able to execute tests | Use standard libraries which include working Test Runner | fix test execution configuration    |
-| UI tests fail                            | Refactor test                                            | publish refactored test and restart |
