@@ -178,7 +178,7 @@ The project owns a certain amount of tests. Each pushed commit should trigger th
 
 
 ## 6.2 Reporting on Test Coverage
-This happens automatically on a push through CI/CD Pipeline.
+This happens automatically on a push through the CI/CD Pipeline.
 
 ## 6.3 Perceived Quality Reports
 If a build of our CI/CD Pipeline fails the administrators will be messaged. This includes a fail due to a failed test.
@@ -212,7 +212,7 @@ The following base software elements are required in the test environment for th
 |------------------------------|----------------------------|
 | Visual Studio Code, Rider    | Test Explorer / Test Runner          |
 | NUnit                      | testing library            |
-| Moq                      | library to mock components |
+| moq                      | library to mock components |
 
 ### 8.3 Productivity and Support Tools
 The following tools will be employed to support the test process for this Test Plan.
