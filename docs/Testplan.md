@@ -169,7 +169,8 @@ API Testing is part of integration testing. Integration tests test multiple modu
 
 ### 5.2 Total Test Coverage
 
-The total test coverage should be above 80%.
+The project does not have a concrete amount of test coverage.
+Tests will be developed as needed.
 
 ## 6. Deliverables
 
