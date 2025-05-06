@@ -59,7 +59,8 @@ save as little as possible in the db to decrease redundancy/storage, but still i
 
 [DBML](localDB.dbml)
 [dbdiagram](https://dbdiagram.io/d/Rezeptbuch-local-DB-67f64ce44f7afba184ed8cd3)
-![Rezeptbuch local DB](https://github.com/user-attachments/assets/0777ae6a-98f9-456e-9177-a23b1300c7f1)
+![Rezeptbuch local db](https://github.com/user-attachments/assets/b3a2323b-d302-43a5-8232-73ca538a7398)
+
 
 
 ## Remote DB
