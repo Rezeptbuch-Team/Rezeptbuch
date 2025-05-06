@@ -7,7 +7,7 @@ Table recipes {
   title TEXT
   description TEXT
   image_path TEXT
-  cooking_time TEXT
+  cooking_time INTEGER
   file_path TEXT
 }
 
