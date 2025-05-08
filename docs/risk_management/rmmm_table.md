@@ -4,3 +4,4 @@
 | R2 | Technical | Local database is not performative enough | 2 | 4 | 8 | test with large datasets; optimize queries | slow response times | refactor queries; switch to a more performant database engine | Monitored | Julius Göler | 22.04.2025 |
 | R3 | Project | Team members being sick/absent | 4 | 2 | 8 | distribute knowledge; buffer in planning; good documentation | | reassign tasks; adjust sprint scope; reevaluate priority of tasks | Active | Julius Göler | 22.04.2025 |
 | R4 | Technical | Inconsistent behavior across platforms (Windows/macOS/Linux) | 3 | 3 | 9 | cross-platform testing; platform-independent libraries | bug reports that are specific to a platform | prioritize platform-specific fixes | Monitored | Luca Grimm | 22.04.2025 |
+| R4 | Technical | Difficulties setting up the project on dev-pc | 3 | 4 | 12 | good documentation for the setup; help setting up | can not develop | help from other team members | Mitigating | Luca Grimm | 08.05.2025 |
