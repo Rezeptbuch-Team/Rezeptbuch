@@ -17,17 +17,19 @@ Standard: Save the recipe file in the form of $hash$.xml
 Dont save recipe files created by the user in that format
 
 ### XML Format
+[XML Schema (XSD)](https://github.com/Rezeptbuch-Team/RezeptbuchApplication/blob/main/src/ApplicationCore/Schemata/recipeXml.xsd)
 
 information:
 - hash of contents
 - title
 - image
 - description
-- ingredient list
 - servings
 - categories
 - cooking time
 - instructions: seperated into steps, inline element for ingredient including amount
+
+An ingredient list can be extracted programmatically.
 
 ## Upload/Update concept
 Using the online features must be activated by the user.
