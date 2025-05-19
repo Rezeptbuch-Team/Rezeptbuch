@@ -1,3 +1,8 @@
+Table app_info {
+  key TEXT PK
+  value TEXT [not null]
+}
+
 Table recipes {
   hash TEXT PK
   is_download INTEGER
