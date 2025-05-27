@@ -36,34 +36,27 @@ Walkthrough:
 #### LocalRecipeListService
 
 Findings:
- - GetCategories und GetCategories logik in gemeinsame Methode auslagern
+ - The methods GetCategories() and GetIngredients() contains duplicate or at least similar code
 
 Actions:
- - asd
+ - Outsource code in a different method.
  
 #### OnlineRecipeListService
 
 Findings:
-  - Online DownloadImage filestream may throw error if file does not exist.
-  - GetCategories Json deserialization on empty json may fail
+  - DownloadImage(): Filestream may throw error if file does not exist.
+  - GetCategories(): Json deserialization on empty json may fail
 
 Actions:
- - asd
+ - add more error handling in DownloadImage() and GetCategories()
 
 #### GetRecipeFromFile
 
 Findings:
   - File service may throw error
-  - XML reader can fail in GetRecipe
+  - XML reader may fail
 
 Actions:
- - asd
-
-#### Missing Things
-
-Findings:
- - Filter recipe list with recipe name
-
-### Lessons learned
+ - add more error handling
 
 
