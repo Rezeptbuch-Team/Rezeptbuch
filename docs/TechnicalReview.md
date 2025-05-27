@@ -1,0 +1,27 @@
+# Technical Review
+27.05.2025 xx:xx - xx:xx
+
+## Participants
+Julius Göler, 
+
+## Goals/Focus
+The focus of this review was to analyze and improve critical backend components related to recipe retrieval and file handling:
+- LocalRecipeListService
+- OnlineRecipeListService
+- GetRecipeFromFileService
+
+We selected these components because they’re essential to the application’s functionality and are the primary determinants of its performance and correctness.
+
+## Components for the Review
+ - LocalRecipeListService: Retrieves a list of available recipes from the local database for the user to choose from.
+ - OnlineRecipeListService: Retrieves a list of available recipes from the remote API for the user to choose from.
+ - GetRecipeFromFileService: Loads and parses recipe files from disk.
+
+## Review criteria
+| Component                | Criteria |
+|--------------------------|----------|
+| LocalRecipeListService   | Code quality, performance |
+| OnlineRecipeListService  | Code quality, error handling |
+| GetRecipeFromFileService | Code quality, reliability/error handling |
+
+
