@@ -36,7 +36,7 @@ Walkthrough:
 #### LocalRecipeListService
 
 Findings:
- - asd
+ - GetCategories und GetCategories logik in gemeinsame Methode auslagern
 
 Actions:
  - asd
@@ -44,7 +44,8 @@ Actions:
 #### OnlineRecipeListService
 
 Findings:
- - asd
+  - Online DownloadImage filestream may throw error if file does not exist.
+  - GetCategories Json deserialization on empty json may fail
 
 Actions:
  - asd
@@ -52,10 +53,16 @@ Actions:
 #### GetRecipeFromFile
 
 Findings:
- - asd
+  - File service may throw error
+  - XML reader can fail in GetRecipe
 
 Actions:
  - asd
+
+#### Missing Things
+
+Findings:
+ - Filter recipe list with recipe name
 
 ### Lessons learned
 
