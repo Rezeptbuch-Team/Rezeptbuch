@@ -34,18 +34,21 @@ Walkthrough:
 ## Results
 ### Review outcomes
 #### LocalRecipeListService
+
 Findings:
  - 
 Actions:
  - 
  
 #### OnlineRecipeListService
+
 Findings:
  - 
 Actions:
  - 
 
 #### GetRecipeFromFile
+
 Findings:
  - 
 Actions:
