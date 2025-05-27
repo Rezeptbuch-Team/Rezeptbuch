@@ -308,5 +308,5 @@ components:
           items:
             type: string
         cooking_time:
-          type: string
+          type: int
           example: 20
