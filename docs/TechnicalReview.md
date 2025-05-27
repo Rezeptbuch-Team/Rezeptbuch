@@ -1,5 +1,5 @@
 # Technical Review
-27.05.2025 xx:xx - xx:xx
+27.05.2025 16:00 - 17:30
 
 ## Preparation
 ### Participants
