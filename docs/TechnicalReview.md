@@ -36,21 +36,21 @@ Walkthrough:
 #### LocalRecipeListService
 
 Findings:
- - 
+ - as
 Actions:
  - 
  
 #### OnlineRecipeListService
 
 Findings:
- - 
+ - asd
 Actions:
  - 
 
 #### GetRecipeFromFile
 
 Findings:
- - 
+ - asd
 Actions:
  - 
 
