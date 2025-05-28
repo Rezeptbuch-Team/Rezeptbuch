@@ -3,7 +3,7 @@
 
 ## Preparation
 ### Participants
-Julius Göler, 
+Julius Göler, Luca Grimm, Lukas Scharnweber
 
 ### Goals/Focus
 The focus of this review was to analyze and improve critical backend components related to recipe retrieval and file handling:
