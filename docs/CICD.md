@@ -1,99 +1,98 @@
 # CI/CD Dokumentation
 
-Dieses Dokument beschreibt die Continuous Integration und Continuous Deployment (CI/CD) Pipelines für die Projekte **RezeptbuchAPI** und **RezeptbuchApplication**.
+Dieses Dokument beschreibt die Continuous Integration und Continuous Deployment (CI/CD) Prozesse für die Projekte **RezeptbuchAPI** und **RezeptbuchApplication**.  
+Zudem wird das automatisierte Dependency-Management mit **Dependabot** erläutert.
 
 ---
 
-## 1. RezeptbuchAPI – Test Pipeline
+## 1. Automatisiertes Dependency-Management mit Dependabot
 
-Automatisiertes Testen der API bei jedem Push und Pull Request auf den Hauptbranch (`main`).  
-**Hinweis:** Das Deployment der API erfolgt automatisch über Render, sobald ein erfolgreicher Commit im Hauptbranch landet. Die Pipeline selbst kümmert sich ausschließlich um Build und Tests.
+Für beide Projekte wird [Dependabot](https://docs.github.com/de/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependabot-version-updates) genutzt, um Abhängigkeiten aktuell und sicher zu halten.  
+Dependabot erstellt automatisch Pull Requests, wenn neue Versionen von Bibliotheken verfügbar sind.
 
-### Ablauf der Pipeline
+- **RezeptbuchAPI:**  
+  - Paket-Ökosystem: `nuget`  
+  - Verzeichnis: `/RezeptbuchAPI/`  
+  - Update-Intervall: wöchentlich
 
-1. Checkout des Codes
-2. Setzen des .NET SDK
-3. Installieren der Abhängigkeiten
-4. Bauen der Lösung
-5. Ausführen der Tests
+- **RezeptbuchApplication:**  
+  - Paket-Ökosystem: `nuget`  
+  - Verzeichnisse:  
+    - `/src/ApplicationCore`  
+    - `/src/ApplicationCore.Tests`  
+    - `/src/GUI`  
+  - Update-Intervall: täglich, jeweils 10:30 Uhr (Europe/Berlin)
 
-### Beispiel-Workflow (`.github/workflows/api-test.yml`)
+---
 
-```yaml
-name: API Test Pipeline
+## 2. CI/CD für RezeptbuchAPI
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+Für die **RezeptbuchAPI** existiert eine zentrale CI/CD-Pipeline (`.github/workflows/ci-cd.yml`), die folgende Schritte automatisiert:
 
-jobs:
-  build-and-test:
-    runs-on: ubuntu-latest
+### Build & Test
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+- **Auslöser:** Jeder Push oder Pull Request auf den `main`-Branch
+- **Ablauf:**
+  1. Checkout des Codes
+  2. Setup des .NET SDK (Version 8.0.x)
+  3. Wiederherstellen der Abhängigkeiten (`dotnet restore`)
+  4. Build der Lösung im Release-Modus (`dotnet build --no-restore --configuration Release`)
+  5. Ausführen der Tests mit Code Coverage (`dotnet test --no-build --configuration Release --collect:"XPlat Code Coverage"`)
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '8.0.x'
+### Deployment
 
-    - name: Restore dependencies
-      run: dotnet restore
+- **Auslöser:** Erfolgreicher Abschluss von Build & Test auf dem `main`-Branch
+- **Ablauf:**  
+  Das Deployment erfolgt automatisiert über Render, sobald ein Commit erfolgreich auf `main` gelandet ist. Die Pipeline selbst enthält aktuell keinen expliziten Deployment-Schritt im Workflow, sondern bereitet das Projekt für Render vor.
 
-    - name: Build
-      run: dotnet build --no-restore
+---
 
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
-```
+## 3. CI/CD für RezeptbuchApplication
 
+Für die **RezeptbuchApplication** gibt es mehrere Workflows, die verschiedene Aspekte automatisieren:
 
-## 2. RezeptbuchApplication – Build & Test Pipeline
+### 3.1. Build & Test für ApplicationCore (`.github/workflows/dotnet.yml`)
 
-Automatisiertes Bauen und Testen der Anwendung bei jedem Push und Pull Request auf den Hauptbranch (`main`).
+- **Auslöser:** Jeder Push oder Pull Request auf `main`
+- **Ablauf:**
+  1. Checkout des Codes
+  2. Setup des .NET SDK (8.0.x)
+  3. Wiederherstellen der Abhängigkeiten für die Tests
+  4. Build von `ApplicationCore` und den Tests
+  5. Ausführen der Tests
 
-### Ablauf der Pipeline
+### 3.2. Windows-Build für die GUI (`.github/workflows/dotnet-build-windows.yml`)
 
-1. Checkout des Codes
-2. Setzen des .NET SDK
-3. Installieren der Abhängigkeiten
-4. Bauen der Lösung
-5. Ausführen der Tests
+- **Auslöser:** Jeder Push oder Pull Request auf `main`
+- **Ablauf:**
+  1. Checkout des Codes
+  2. Setup des .NET SDK (8.0.x)
+  3. Installation des MAUI-Workloads
+  4. Wiederherstellen der Abhängigkeiten für die GUI
+  5. Build und Publish der Windows-App (`dotnet publish`)
+  6. Upload des Build-Artifacts
 
-### Beispiel-Workflow (`.github/workflows/app-build.yml`)
+---
 
-```yaml
-nname: Application Build & Test Pipeline
+## 4. Hinweise und Best Practices
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+- **Branch Policy:**  
+  Alle relevanten Pipelines werden auf dem `main`-Branch und bei Pull Requests ausgelöst. So wird sichergestellt, dass nur getesteter und gebauter Code in die Hauptentwicklung gelangt.
+- **Testabdeckung:**  
+  Die API-Pipeline sammelt zusätzlich Code Coverage.
+- **Deployment:**  
+  Die Bereitstellung der API erfolgt außerhalb der GitHub Actions-Pipeline automatisch über Render.
+- **Abhängigkeiten:**  
+  Durch Dependabot werden Sicherheitslücken und Updates automatisiert per Pull Request eingepflegt.
 
-jobs:
-  build-and-test:
-    runs-on: ubuntu-latest
+---
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+## 5. Übersicht der wichtigsten Workflow-Dateien
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '8.0.x'
-
-    - name: Restore dependencies
-      run: dotnet restore
-
-    - name: Build
-      run: dotnet build --no-restore
-
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
-```
+| Projekt                 | Workflow-Datei                              | Zweck                      |
+|-------------------------|---------------------------------------------|----------------------------|
+| RezeptbuchAPI           | `.github/workflows/ci-cd.yml`               | Build, Test, Vorbereitung Deployment |
+| RezeptbuchApplication   | `.github/workflows/dotnet.yml`              | Build & Test (ApplicationCore) |
+| RezeptbuchApplication   | `.github/workflows/dotnet-build-windows.yml`| Build & Artifact für Windows GUI |
+| RezeptbuchAPI           | `.github/dependabot.yml`                    | Automatische Dependency-Updates |
+| RezeptbuchApplication   | `.github/dependabot.yml`                    | Automatische Dependency-Updates |
