@@ -31,7 +31,7 @@ Für die **RezeptbuchAPI** existiert eine zentrale CI/CD-Pipeline (`.github/work
 
 ### Build & Test
 
-- **Auslöser:** Jeder Push oder Pull Request auf den `main`-Branch
+- **Auslöser:** Jeder Push oder Pull Request auf den `main`-Branch.
 - **Ablauf:**
   1. Checkout des Codes
   2. Setup des .NET SDK (Version 8.0.x)
@@ -41,25 +41,26 @@ Für die **RezeptbuchAPI** existiert eine zentrale CI/CD-Pipeline (`.github/work
 
 ### Deployment
 
-- **Auslöser:** Erfolgreicher Abschluss von Build & Test auf dem `main`-Branch
+- **Auslöser:** Erfolgreicher Abschluss des Build & Test-Jobs (nur auf `main`).
 - **Ablauf:**  
-  Das Deployment erfolgt automatisiert über Render, sobald ein Commit erfolgreich auf `main` gelandet ist. Die Pipeline selbst enthält aktuell keinen expliziten Deployment-Schritt im Workflow, sondern bereitet das Projekt für Render vor.
+  Ein separater Deployment-Job wird nach erfolgreichem Build & Test ausgeführt.  
+  Das eigentliche Deployment erfolgt wie gehabt über Render, die Pipeline selbst enthält keinen expliziten Deployment-Schritt.
 
 ---
 
 ## 3. CI/CD für RezeptbuchApplication
 
-Für die **RezeptbuchApplication** gibt es mehrere Workflows, die verschiedene Aspekte automatisieren:
+Für die **RezeptbuchApplication** gibt es mehrere Workflows, die verschiedene Aspekte automatisieren.
 
 ### 3.1. Build & Test für ApplicationCore (`.github/workflows/dotnet.yml`)
 
-- **Auslöser:** Jeder Push oder Pull Request auf `main`
+- **Auslöser:** Jeder Push oder Pull Request auf `main`.
 - **Ablauf:**
   1. Checkout des Codes
   2. Setup des .NET SDK (8.0.x)
-  3. Wiederherstellen der Abhängigkeiten für die Tests
-  4. Build von `ApplicationCore` und den Tests
-  5. Ausführen der Tests
+  3. Wiederherstellen der Abhängigkeiten für die Tests (`dotnet restore ./src/ApplicationCore.Tests/ApplicationCore.Tests.csproj`)
+  4. Build von `ApplicationCore` und den Tests (`dotnet build ./src/ApplicationCore.Tests/ApplicationCore.Tests.csproj --no-restore`)
+  5. Ausführen der Tests (`dotnet test ./src/ApplicationCore.Tests/ApplicationCore.Tests.csproj --no-build --verbosity normal`)
 
 ### 3.2. Windows-Build für die GUI (`.github/workflows/dotnet-build-windows.yml`)
 
