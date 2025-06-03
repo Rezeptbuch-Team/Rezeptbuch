@@ -9,7 +9,7 @@
 ![Stunden pro Workflow  (∑=184h)](https://github.com/user-attachments/assets/0118ced9-892e-4f3d-b918-51ffacd1cfb3)
 
 ### Hours per phase
-![image](https://github.com/user-attachments/assets/35c9d3fd-8a56-4ff3-b40d-f72022ed2302)
+![image](https://github.com/user-attachments/assets/d9eda9e8-1246-4103-8049-9b0cac1548f6)
 
 
 ## Demo
