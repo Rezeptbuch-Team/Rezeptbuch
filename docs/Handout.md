@@ -3,7 +3,9 @@
 ## Workload Statistics
 ### Hours and main task per person
 
+
 ### Hours per workflow
+![Stunden pro Workflow  (∑=184h)](https://github.com/user-attachments/assets/0118ced9-892e-4f3d-b918-51ffacd1cfb3)
 
 ### Hours per phase
 
