@@ -2,12 +2,14 @@
 
 ## Workload Statistics
 ### Hours and main task per person
+![Stunden pro Teammitglied](https://github.com/user-attachments/assets/08bc2bef-0017-4e99-9077-f5c20b47eaa4)
 
 
 ### Hours per workflow
 ![Stunden pro Workflow  (∑=184h)](https://github.com/user-attachments/assets/0118ced9-892e-4f3d-b918-51ffacd1cfb3)
 
 ### Hours per phase
+![image](https://github.com/user-attachments/assets/35c9d3fd-8a56-4ff3-b40d-f72022ed2302)
 
 
 ## Demo
