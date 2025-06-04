@@ -17,7 +17,7 @@
 ![Online](https://github.com/user-attachments/assets/44aaa568-53f5-454c-8088-ec497e23b838)
 ### Display a list of locally available recipes
 ![Local](https://github.com/user-attachments/assets/7d488073-8391-4d15-9fbd-17480a908460)
-### Display a selected recipe and its ingerdients according to the selected serving size
+### Display a selected recipe and its ingredients according to the selected serving size
 ![ShowRecipe](https://github.com/user-attachments/assets/328af950-08fb-475a-be64-a9f5798ec6b2)
 ### Navigate through different steps of the recipe
 ![NavigateRecipe](https://github.com/user-attachments/assets/48dae28a-e7b4-4baf-990d-a0c8ee448395)
