@@ -1,0 +1,181 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Seite-1" id="h2GBuIPQSZCCAfWqYniL">
+    <mxGraphModel dx="1186" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9xuAZK58PGudVpGch_fD-1" value="MauiProgram" style="text;html=1;fontSize=14;fontStyle=1;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="280" y="160" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-2" value="+CreateMauiApp() : MauiApp" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="280" y="180" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-3" value="IOnlineRecipeListService &lt;&lt;interface&gt;&gt;" style="text;html=1;fontSize=14;fontStyle=2;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="280" y="240" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-4" value="+BuildUrl(filter: Filter) : string +GetOnlineRecipeList(filter: Filter) : Task&lt;List&lt;RecipeEntry&gt;&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="280" y="260" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-5" value="OnlineRecipeListService" style="text;html=1;fontSize=14;fontStyle=1;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="500" y="240" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-6" value="+BuildUrl(filter: Filter) : string +GetOnlineRecipeList(filter: Filter) : Task&amp;gt;&lt;div&gt;httpClient : HttpClient&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="500" y="260" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-7" value="RecipeEntry" style="text;html=1;fontSize=14;fontStyle=1;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="850" y="160" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-8" value="hash : string&amp;nbsp;&lt;div&gt;title : string&amp;nbsp;&lt;/div&gt;&lt;div&gt;description :&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(29, 53, 87), rgb(176, 196, 226));&quot;&gt;string&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(29, 53, 87), rgb(176, 196, 226));&quot;&gt;imagePath :&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(29, 53, 87), rgb(176, 196, 226));&quot;&gt;string&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(29, 53, 87), rgb(176, 196, 226));&quot;&gt;categories :&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(29, 53, 87), rgb(176, 196, 226));&quot;&gt;List&amp;lt;string&amp;gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(29, 53, 87), rgb(176, 196, 226));&quot;&gt;cookingTime : int&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="850" y="180" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-9" value="Recipe" style="text;html=1;fontSize=14;fontStyle=1;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="850" y="290" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-10" value="hash : string&amp;nbsp;&lt;div&gt;title : string&amp;nbsp;&lt;/div&gt;&lt;div&gt;description : string&amp;nbsp;&lt;/div&gt;&lt;div&gt;image_path : string&amp;nbsp;&lt;/div&gt;&lt;div&gt;categories : List&amp;lt;string&amp;gt;&lt;/div&gt;&lt;div&gt;cooking_time : int&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="850" y="310" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-11" value="Ingredient" style="text;html=1;fontSize=14;fontStyle=1;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="850" y="430" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-12" value="name : string&amp;nbsp;&lt;div&gt;amount : int&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="850" y="450" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-13" value="ListLocalRecipeView" style="text;html=1;fontSize=14;fontStyle=1;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="280" y="410" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-14" value="BindingContext : ListLocalRecipeViewModel" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="280" y="430" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-15" value="ListLocalRecipeViewModel" style="text;html=1;fontSize=14;fontStyle=1;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="540" y="410" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-16" value="Text : string&amp;nbsp;&lt;div&gt;Recipes : ObservableCollection&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="540" y="430" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-17" value="ListRemoteRecipeView" style="text;html=1;fontSize=14;fontStyle=1;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="280" y="490" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-18" value="BindingContext : ListRemoteRecipeViewModel" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="280" y="510" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-19" value="ListRemoteRecipeViewModel" style="text;html=1;fontSize=14;fontStyle=1;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="540" y="490" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-20" value="Recipes : ObservableCollection&lt;Recipe&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="540" y="510" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-21" value="ShowRecipeView" style="text;html=1;fontSize=14;fontStyle=1;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="280" y="560" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-22" value="BindingContext : ShowRecipeViewModel" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="280" y="580" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-23" value="ShowRecipeViewModel" style="text;html=1;fontSize=14;fontStyle=1;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="540" y="560" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-24" value="RecipeName : string&amp;nbsp;&lt;div&gt;RecipeTime : int&amp;nbsp;&lt;/div&gt;&lt;div&gt;RecipeIngredients :ObservableCollection RecipeDescription : string RecipeImage : ImageSource&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="540" y="580" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-25" value="NavigateThroughRecipeView" style="text;html=1;fontSize=14;fontStyle=1;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="280" y="660" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-26" value="BindingContext : NavigateThroughRecipeViewModel" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="280" y="680" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-27" value="NavigateThroughRecipeViewModel" style="text;html=1;fontSize=14;fontStyle=1;align=center;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;rounded=1;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="540" y="660" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-28" value="CurrentRecipeIndex : int&amp;nbsp;&lt;div&gt;Recipes : ObservableCollection&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;flipH=1;flipV=1;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+          <mxGeometry x="540" y="680" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-29" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-13" target="9xuAZK58PGudVpGch_fD-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-30" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-17" target="9xuAZK58PGudVpGch_fD-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-31" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-21" target="9xuAZK58PGudVpGch_fD-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-32" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-25" target="9xuAZK58PGudVpGch_fD-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-33" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-15" target="9xuAZK58PGudVpGch_fD-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="410" />
+              <mxPoint x="680" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-34" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-19" target="9xuAZK58PGudVpGch_fD-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="500" />
+              <mxPoint x="780" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-35" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-23" target="9xuAZK58PGudVpGch_fD-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="570" />
+              <mxPoint x="810" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-36" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-5" target="9xuAZK58PGudVpGch_fD-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-37" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-1" target="9xuAZK58PGudVpGch_fD-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="170" />
+              <mxPoint x="190" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-38" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-1" target="9xuAZK58PGudVpGch_fD-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="170" />
+              <mxPoint x="140" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-39" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-1" target="9xuAZK58PGudVpGch_fD-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="170" />
+              <mxPoint x="90" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-40" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-1" target="9xuAZK58PGudVpGch_fD-25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="170" />
+              <mxPoint x="60" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-41" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-1" target="9xuAZK58PGudVpGch_fD-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="170" />
+              <mxPoint x="580" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9xuAZK58PGudVpGch_fD-42" style="endArrow=block;labelBackgroundColor=none;fontColor=default;snapToPoint=0;fixDash=0;metaEdit=0;backgroundOutline=0;comic=0;rounded=1;strokeColor=#457B9D;" parent="1" source="9xuAZK58PGudVpGch_fD-5" target="9xuAZK58PGudVpGch_fD-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="250" />
+              <mxPoint x="760" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
