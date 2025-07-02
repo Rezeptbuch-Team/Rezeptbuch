@@ -125,7 +125,7 @@ These services manage tasks such as recipe retrieval, filtering and synchronizat
 ensuring a clean separation between the user interface and the backend logic.
 
 The following diagram illustrates the class structure of the application logic:
-![Application Class Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/class_diagrams/ApplicationLogicDiagram.drawio.png)
+![Application Class Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/class_diagrams/ApplicationLogicClassDiagram.drawio.png)
 
 
 ## 6. Process View
