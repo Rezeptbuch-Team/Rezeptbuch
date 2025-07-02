@@ -82,7 +82,8 @@ architectural representation, and views (Use-Case, Logical, Process, Deployment,
 It also addresses size, performance, and quality considerations.
 
 ## 2. Architectural Represantation
-
+The archtiecture is split into API, ApplicationLogic and Application.
+Where ApplicationLogic and Application are working closely together and the API is being accessed by the ApplicationLogic through HTTP-Endpoints.
 
 ## 3. Architectural Goals and Constraints
 The architecture of Rezeptbuch is shaped by Architecturally Significant Requirements (ASR)
@@ -149,10 +150,18 @@ Depicts the process of retrieving recipes from the server.
 ![List Online Recipes Sequence Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/sequence_diagrams/ListOnlineRecipesSequenceDiagram.png)
 
 ## 7. Deployment View
+The Rezeptbuch application is deployed as a native executable (.exe and MacOS counterpart) built using .NET MAUI and includes:
+- The frontend UI rendered with MAUI.
+- A local database for offline access.
+- XML-based recipe files stored on disk.
 
+The backend API is deployed separately using Render and accessed via RESTful HTTP.
+It makes use of a database which is also hosted by Render.
+The frontend and application logic communicate with the server to upload, update, and retrieve online recipes.
+
+No web server or cloud deployment is required for the local application itself, enabling simple distribution and offline functionality.
 
 ## 8. Implementation View
-
 ### 8.1 Overview
 The Rezeptbuch implementation model is organized into three main layers:
 1. **Frontend**:  
@@ -168,12 +177,22 @@ Frontend, Application Logic, and API (Server), highlighting the dependencies and
 
 ![Package Diagram](https://github.com/GermanJesus-lul/Rezeptbuch/blob/main/docs/PackageDiagram/PackageDiagram.png)
 
+## 9. Data View
+Rezeptbuch stores recipe data in two forms: structured entries in a local SQLite database and full recipe content in XML files.
+The database holds metadata such as titles, categories, and ingredient references, which enables fast searching and filtering.
+The XML files contain the complete recipe information and are used for display, editing, and syncing.
 
-## 9. Data View (optional)
-
+The data model supports linking recipes with categories and ingredients through mapping tables.
+Data consistency is ensured using hashes, and the design allows recipes to be added, modified, or removed without affecting the overall structure.
 
 ## 10. Size and Performance
+The Rezeptbuch application is lightweight and optimized for responsiveness.
+Recipe data is stored as compact XML files alongside a local SQLite database.
+The system is designed to handle a large number of recipes without significant performance issues.
 
+Recipe lists load quickly both locally and from the server.
+Hash calculations and file parsing are efficient, and startup synchronization is implemented to minimize delays.
+Performance is considered throughout the development process using TDD and profiling where needed.
 
 ## 11. Quality
 The architecture of Rezeptbuch is designed to support key quality attributes:  
