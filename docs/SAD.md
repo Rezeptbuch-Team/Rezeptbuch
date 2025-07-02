@@ -36,7 +36,7 @@
    
    8.2 [Layers](#82-layers)
 
-10. [Data View](#9-data-view-(optional))
+10. [Data View](#9-data-view)
 
 11. [Size and Performance](#10-size-and-performance)
 
